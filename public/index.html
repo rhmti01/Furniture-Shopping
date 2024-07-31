@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Shopping</title>
+    <link rel="stylesheet" href="build/output.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/Logo Icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="  font-inter bg-white flex items-center justify-center flex-col  ">
+
+    <div class="   w-full ">
+
+
+
+        <header class=" w-full bg-green-400 flex items-center justify-center flex-col mx-auto ">
+            <!-- website first message -->
+            <div class=" bg-[#272343]  w-full  flex justify-center flex-col items-center ">
+                <div class=" bg-slate-600/ h-10 max-w-screen-xl w-full flex items-center justify-between px-5 ">
+                    <p class=" text-sm flex items-center text-[#BEBDC6]  ">
+                        <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none">
+                            <path stroke="#BEBDC6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M13.333 4.5 6 11.833 2.667 8.5" /></svg>
+                        Free shipping on all orders over $50
+                    </p>
+                    <div class=" flex items-center justify-center gap-x-5 ">
+                        <a class=" text-sm   flex items-center text-[#BEBDC6] " href="#">
+                            Eng
+                            <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="9" height="5" fill="none">
+                                <path stroke="#BEBDC6" stroke-linecap="round" stroke-linejoin="round"
+                                    d="m8 .75-3.5 3.5L1 .75" /></svg>
+                        </a>
+                        <a class=" text-sm   text-[#BEBDC6] " href="#">Faqs</a>
+                        <a class=" text-sm  flex items-center text-[#BEBDC6] " href="#">
+                            <svg class=" mr-1 " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+                                <g stroke="#BEBDC6" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#a)"
+                                    opacity=".7">
+                                    <path
+                                        d="M8 14.667A6.667 6.667 0 1 0 8 1.333a6.667 6.667 0 0 0 0 13.334ZM8 5.333V8M8 10.667h.006" />
+                                </g>
+                                <defs>
+                                    <clipPath id="a">
+                                        <path fill="#BEBDC6" d="M0 0h16v16H0z" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            Need Help
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class=" bg-[#F0F2F3] w-full  ">
+                <div class=" mx-auto max-w-screen-xl h-20 flex items-center justify-between ">
+                    <!-- icon  -->
+                    <div class=" flex items-center justify-center gap-x-3 bg-red-400/ ">
+                        <img src="/assets/images/logo.png " alt="logo">
+                        <h1 class=" text-2xl font-semibold text-[#272343] ">Comforty</h1>
+                    </div>
+                    <!-- search input -->
+                    <div class=" flex items-center justify-between  bg-white p-3 rounded-lg shadow-sm basis-1/4 ">
+                        <input class=" w-full outline-none border-none h-5 mx-1  " type="text" name="search" id="search"
+                            placeholder="Search here...">
+                        <svg class=" mx-1 cursor-pointer " xmlns="http://www.w3.org/2000/svg" width="23" height="22"
+                            fill="none">
+                            <path stroke="#272343" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M10.583 17.417a7.333 7.333 0 1 0 0-14.667 7.333 7.333 0 0 0 0 14.667ZM19.75 19.25l-3.988-3.988" />
+                        </svg>
+                    </div>
+                    <!-- hyper links -->
+                    <div class=" flex items-center justify-center  gap-x-3 ">
+                        <a class=" flex items-center justify-evenly gap-x-4  bg-white p-3 rounded-lg " href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                                <path stroke="#272343" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="m2.52 2.98 1.908.33.882 10.516a1.65 1.65 0 0 0 1.65 1.515h10.001a1.65 1.65 0 0 0 1.635-1.417l.871-6.011a1.231 1.231 0 0 0-1.041-1.394c-.059-.006-13.692-.01-13.692-.01M12.948 9.896h2.542" />
+                                <path fill="#272343" fill-rule="evenodd" stroke="#272343" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="1.5"
+                                    d="M6.558 18.52a.499.499 0 1 1 .042.997.499.499 0 0 1-.042-.997ZM16.899 18.52a.5.5 0 1 1 0 .999.5.5 0 0 1 0-1Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class=" text-[#272343] font-medium ">cart</span>
+                            <span id="product-counter"
+                                class=" w-5 h-5 text-[12px] rounded-full bg-[#007580] text-slate-200 flex items-center justify-center  ">2</span>
+                        </a>
+                        <a class=" bg-white p-3 rounded-lg " href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                                <path stroke="#272343" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M2.633 10.632c-.984-3.071.165-6.581 3.39-7.62A5.507 5.507 0 0 1 11 3.848c1.334-1.031 3.274-1.38 4.968-.836 3.224 1.039 4.381 4.549 3.398 7.62C17.836 15.498 11 19.248 11 19.248s-6.785-3.692-8.367-8.617v0Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a class=" bg-white p-3 rounded-lg " href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                                <path stroke="#272343" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M10.986 14.067c-3.545 0-6.572.536-6.572 2.683s3.007 2.703 6.572 2.703c3.545 0 6.573-.538 6.573-2.683 0-2.146-3.009-2.703-6.573-2.703v0Z"
+                                    clip-rule="evenodd" />
+                                <path stroke="#272343" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.429"
+                                    d="M10.986 11.006a4.213 4.213 0 1 0-4.213-4.213 4.198 4.198 0 0 0 4.183 4.213h.03Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class=" w-full bg-white ">
+                <div class=" mx-auto max-w-screen-xl h-20 flex items-center justify-between ">
+                    <!-- navbar -->
+                    <nav class="  bg-violet-300/ ">
+                        <ul class=" flex items-center justify-center gap-x-10 ">
+                            <li
+                                class=" cursor-pointer text-[#272343] font-medium flex items-center gap-x-4 px-5 py-3 bg-sky-50/ rounded-lg border-[1px] border-slate-300  ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" fill="none">
+                                    <path fill="#272343" d="M18 2.5H0v-2h18v2ZM18 8.5H0v-2h18v2ZM18 14.5H0v-2h18v2Z" />
+                                </svg>
+                                All Categories
+                            </li>
+                            <li class=" font-medium text-[#636270] cursor-pointer ">Shop</li>
+                            <li class=" font-medium text-[#636270] cursor-pointer ">Product</li>
+                            <li class=" font-medium text-[#636270] cursor-pointer ">Pages</li>
+                            <li class=" font-medium text-[#636270] cursor-pointer ">About</li>
+                        </ul>
+                    </nav>
+                    <!-- cantact info -->
+                    <p class=" font-medium text-[#888795]  ">
+                        Contact:
+                        <span class="text-[#151227] ">(808) 555-0111</span>
+                    </p>
+                </div>
+            </div>
+        </header>
+
+
+
+        <!-- website banner -->
+        <section class=" w-full  flex justify-center mt-2 mb-24 ">
+            <div
+                class=" relative w-full max-w-[1450px]  h-[720px] rounded-b-3xl bg-[#ebedee]  flex items-center justify-evenly px-16 ">
+                <!-- banner title -->
+                <div class="z-10 flex items-start justify-center flex-col mt-10 ">
+                    <p class=" font-medium text-[#4b4c4d] ">WELCOME TO CHAIRY</p>
+                    <h1
+                        class=" leading-tight text-slate-800 font-bold bg-red-600/ font-inter text-[60px] flex items-start justify-center flex-col  ">
+                        Best Furniture <br>
+                        Collection For Your <br>
+                        Interior.
+                    </h1>
+                    <button
+                        class=" text-white font-medium text-sm mt-4 flex justify-evenly py-3  px-2 w-36 bg-[#029FAE] rounded-lg ">
+                        Shop Now
+                        <svg class="  " xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M15.5 7.5 20 12m0 0-4.5 4.5M20 12H4" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- banner image -->
+                <div class="z-10 flex justify-center items-center relative mb-10 ">
+                    <img class=" xl:w-[400px]  " src="/assets/images/banner-sofa.png" alt="banner-sofa">
+                    <img class=" w-28 absolute -top-3 -right-10 " src="/assets/images/discount.png" alt="Discount">
+                </div>
+                <!-- bg shape -->
+                <img class=" absolute top-0 right-[7%] w-[620px] " src="/assets/images/BG Shapes.png" alt="BG-Shape">
+                <!-- slider prev and next buttons -->
+                <div
+                    class=" absolute top-1/2 cursor-pointer left-12 flex items-center justify-center w-11 h-11 bg-white rounded-full shadow-sm ">
+                    <svg class=" scale-[85%] " xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                        <path stroke="#0d2022" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M8.5 7.5 4 12m0 0 4.5 4.5M4 12h16" />
+                    </svg>
+                </div>
+                <div
+                    class=" absolute top-1/2 cursor-pointer right-12 flex items-center justify-center w-11 h-11 bg-white rounded-full shadow-sm ">
+                    <svg class=" scale-[85%] " xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                        <path stroke="#0d2022" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M15.5 7.5 20 12m0 0-4.5 4.5M20 12H4" />
+                    </svg>
+                </div>
+                <!-- slider dots -->
+                <div class=" absolute  bottom-24 flex items-center justify-evenly w-20 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none">
+                        <circle cx="6" cy="6" r="6" fill="#9A9CAA" opacity=".4" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none">
+                        <circle cx="6" cy="6" r="6" fill="#272343" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none">
+                        <circle cx="6" cy="6" r="6" fill="#9A9CAA" opacity=".4" /></svg>
+                </div>
+                <!-- shop products options -->
+                <div
+                    class=" gap-x-7 flex items-center justify-evenly bg-white w-full py-9 px-6 rounded-xl max-w-[1160px] h-32 shadow-md z-20 absolute -bottom-[67px] ">
+                    <div class="flex items-center justify-evenly gap-x-3">
+                        <img class=" scale-75 " src="/assets/images/box.png" alt="box">
+                        <div class="  block ">
+                            <h3 class=" font-medium text-slate-800 text-lg ">Discount</h3>
+                            <p class=" font-normal text-[15px] text-slate-400 ">Every week new sales</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-evenly gap-x-3">
+                        <img class=" scale-75 " src="/assets/images/delivery-truck.png" alt="delivery-truck">
+                        <div class="  block ">
+                            <h3 class=" font-medium text-slate-800 text-lg ">Free Delivery</h3>
+                            <p class=" font-normal text-[15px] text-slate-400 ">100% Free for all orders</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-evenly gap-x-3">
+                        <img class=" scale-75 " src="/assets/images/24-hours.png" alt="24-hours">
+                        <div class="  block ">
+                            <h3 class=" font-medium text-slate-800 text-lg ">Great Support 24/7</h3>
+                            <p class=" font-normal text-[15px] text-slate-400 ">We care your experiences</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-evenly gap-x-3">
+                        <img class=" scale-75 " src="/assets/images/shield.png" alt="shield">
+                        <div class="  block ">
+                            <h3 class=" font-medium text-slate-800 text-lg ">Secure Payment</h3>
+                            <p class=" font-normal text-[15px] text-slate-400 ">100% Secure Payment Method</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- brands group -->
+        <div class="  bg-fuchsia-400/ w-full mx-auto h-32 flex items-center justify-between max-w-[1180px] mt-4 p-8  ">
+            <img src="/assets/images/Logo (1).png" alt="brand">
+            <img src="/assets/images/Logo (2).png" alt="brand">
+            <img src="/assets/images/Logo (3).png" alt="brand">
+            <img src="/assets/images/Logo (4).png" alt="brand">
+            <img src="/assets/images/Logo (5).png" alt="brand">
+            <img src="/assets/images/Logo (6).png" alt="brand">
+            <img src="/assets/images/Logo (7).png" alt="brand">
+        </div>
+
+
+
+        <!-- category slider -->
+        <div class=" bg-yellow-500/ mx-auto w-full max-w-[1150px] flex items-center justify-center flex-col mt-10  ">
+            <!-- title and prev and next  buttons-->
+            <div class="max-w-[1420px]   flex items-center justify-between w-full ">
+                <h2 class=" text-3xl font-semibold text-slate-800 ">Top Categories</h2>
+                <div class=" flex items-center justify-between w-[100px] ">
+                    <div
+                        class=" cursor-pointer flex items-center justify-center w-11 h-11 bg-slate-100 rounded-full shadow-md ">
+                        <svg class=" scale-[85%] " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            fill="none">
+                            <path stroke="#0d2022" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M8.5 7.5 4 12m0 0 4.5 4.5M4 12h16" />
+                        </svg>
+                    </div>
+                    <div
+                        class="cursor-pointer flex items-center justify-center w-11 h-11 bg-slate-100 rounded-full shadow-md ">
+                        <svg class=" scale-[85%] " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            fill="none">
+                            <path stroke="#0d2022" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M15.5 7.5 20 12m0 0-4.5 4.5M20 12H4" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- product slider -->
+        <div class=" w-full max-w-[1300px] flex items-center justify-evenly  bg-yellow-500/ mt-12 gap-x-5  mx-auto  ">
+            <div class=" relative  flex items-center justify-center basis-[12%]  opacity-30  ">
+                <img class=" rounded-2xl w-full h-[310px]  " src="/assets/images/Image (7).png" alt="slider-product">
+                <div class=" block absolute bottom-0 opacity-75 bg-black h-20 rounded-b-2xl  w-full pl-7 pt-2 ">
+                    <!-- <h4 class=" text-white text-xl font-normal ">Wing Chair</h4>
+                    <p class=" text-slate-300 text-sm font-medium mt-2 ">3,584 Products</p> -->
+                </div>
+                <!-- <div class=" absolute inset-0 bg-gradient-to-l from-transparent to-white z-50 " ></div> -->
+            </div>
+            <div class=" relative  flex items-center justify-center basis-1/4 ">
+                <img class=" rounded-2xl w-full " src="/assets/images/slider-product (1).png" alt="slider-product">
+                <div class=" block absolute bottom-0 opacity-75 bg-black h-20 rounded-b-2xl  w-full pl-7 pt-2 ">
+                    <h4 class=" text-white text-xl font-normal ">Wing Chair</h4>
+                    <p class=" text-slate-300 text-sm font-medium mt-2 ">3,584 Products</p>
+                </div>
+            </div>
+            <div class=" relative  flex items-center justify-center basis-1/4 ">
+                <img class=" rounded-2xl w-full " src="/assets/images/slider-product (2).png" alt="slider-product">
+                <div class=" block absolute bottom-0 opacity-75 bg-black h-20 rounded-b-2xl  w-full pl-7 pt-2 ">
+                    <h4 class=" text-white text-xl font-normal ">Wooden Chair</h4>
+                    <p class=" text-slate-300 text-sm font-medium mt-2 ">157 Products</p>
+                </div>
+            </div>
+            <div class=" relative  flex items-center justify-center basis-1/4 ">
+                <img class=" rounded-2xl w-full " src="/assets/images/slider-product (3).png" alt="slider-product">
+                <div class=" block absolute bottom-0 opacity-75 bg-black h-20 rounded-b-2xl  w-full pl-7 pt-2 ">
+                    <h4 class=" text-white text-xl font-normal ">Desk Chair</h4>
+                    <p class=" text-slate-300 text-sm font-medium mt-2 ">584 Products</p>
+                </div>
+            </div>
+            <div class=" relative  flex items-center justify-center basis-[12%] opacity-35 ">
+                <img class=" rounded-2xl w-full h-[310px] " src="/assets/images/Image (8).png" alt="slider-product">
+                <div class=" block absolute bottom-0 opacity-75 bg-black h-20 rounded-b-2xl  w-full pl-7 pt-2 ">
+                    <!-- <h4 class=" text-white text-xl font-normal ">Desk Chair</h4>
+                    <p class=" text-slate-300 text-sm font-medium mt-2 ">584 Products</p> -->
+                </div>
+                <!-- <div class=" absolute inset-0 bg-gradient-to-r from-transparent to-white z-50 " ></div> -->
+            </div>
+        </div>
+
+
+
+        <!-- products -->
+        <section class="mx-auto  flex justify-center items-center flex-col mt-16  ">
+            <!-- title and sort -->
+            <div class=" flex items-center flex-col ">
+                <h2 class=" font-semibold text-slate-800 text-[33px] ">Our Products</h2>
+                <ul class=" flex items-center justify-evenly mt-5 ">
+                    <li
+                        class=" text-slate-400 mx-3 text-[15px] font-medium tracking-wide cursor-pointer border-b-2 border-white pb-1 hover:border-black duration-500 ">
+                        ALL</li>
+                    <li
+                        class=" text-slate-400 mx-3 text-[15px] font-medium tracking-wide cursor-pointer border-b-2 border-white pb-1 hover:border-black duration-500 ">
+                        NEWEST</li>
+                    <li
+                        class=" text-slate-400 mx-3 text-[15px] font-medium tracking-wide cursor-pointer border-b-2 border-white pb-1 hover:border-black duration-500 ">
+                        TRENDING</li>
+                    <li
+                        class=" text-slate-400 mx-3 text-[15px] font-medium tracking-wide cursor-pointer border-b-2 border-white pb-1 hover:border-black duration-500 ">
+                        BEST SELLERS</li>
+                    <li
+                        class=" text-slate-400 mx-3 text-[15px] font-medium tracking-wide cursor-pointer border-b-2 border-white pb-1 hover:border-black duration-500 ">
+                        FEATURED</li>
+                </ul>
+            </div>
+            <!-- products  -->
+            <div class=" grid grid-cols-4 w-full  bg-blue-600/ max-w-[1250px] mt-8 gap-x-6 gap-y-16 p-4 ">
+                <!-- shop product -->
+                <div
+                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                    <!-- product image -->
+                    <img class=" w-full " src="/assets/images/product-image (1).png" alt="product-image" srcset="">
+                    <!-- product info -->
+                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
+                        <div class=" flex items-start justify-center flex-col  ">
+                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
+                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
+                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                        </div>
+                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
+                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- shop product -->
+                <div
+                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                    <!-- product image -->
+                    <img class=" w-full " src="/assets/images/product-image (8).png" alt="product-image" srcset="">
+                    <!-- product info -->
+                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
+                        <div class=" flex items-start justify-center flex-col  ">
+                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
+                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
+                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                        </div>
+                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
+                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- shop product -->
+                <div
+                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                    <!-- product image -->
+                    <img class=" w-full " src="/assets/images/product-image (7).png" alt="product-image" srcset="">
+                    <!-- product info -->
+                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
+                        <div class=" flex items-start justify-center flex-col  ">
+                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
+                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
+                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                        </div>
+                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
+                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- shop product -->
+                <div
+                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                    <!-- product image -->
+                    <img class=" w-full " src="/assets/images/product-image (6).png" alt="product-image" srcset="">
+                    <!-- product info -->
+                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
+                        <div class=" flex items-start justify-center flex-col  ">
+                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
+                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
+                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                        </div>
+                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
+                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- shop product -->
+                <div
+                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                    <!-- product image -->
+                    <img class=" w-full " src="/assets/images/product-image (5).png" alt="product-image" srcset="">
+                    <!-- product info -->
+                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
+                        <div class=" flex items-start justify-center flex-col  ">
+                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
+                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
+                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                        </div>
+                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
+                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- shop product -->
+                <div
+                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                    <!-- product image -->
+                    <img class=" w-full " src="/assets/images/product-image (4).png" alt="product-image" srcset="">
+                    <!-- product info -->
+                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
+                        <div class=" flex items-start justify-center flex-col  ">
+                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
+                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
+                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                        </div>
+                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
+                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- shop product -->
+                <div
+                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                    <!-- product image -->
+                    <img class=" w-full " src="/assets/images/product-image (3).png" alt="product-image" srcset="">
+                    <!-- product info -->
+                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
+                        <div class=" flex items-start justify-center flex-col  ">
+                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
+                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
+                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                        </div>
+                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
+                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- shop product -->
+                <div
+                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                    <!-- product image -->
+                    <img class=" w-full " src="/assets/images/slider-product (2).png" alt="product-image" srcset="">
+                    <!-- product info -->
+                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
+                        <div class=" flex items-start justify-center flex-col  ">
+                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
+                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
+                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                        </div>
+                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
+                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Users Opinion -->
+        <section class=" w-full py-20 bg-[#e7e9ea] mt-20  ">
+            <!-- title -->
+            <div class=" flex items-center justify-between max-w-[1220px] mx-auto ">
+                <h2 class=" font-semibold text-[33px] text-slate-800  "> What Client Says About Us </h2>
+                <div class=" flex items-center justify-between w-[100px] ">
+                    <div
+                        class="  prev-next-btn cursor-pointer flex items-center justify-center w-11 h-11 bg-slate-100 rounded-full shadow-md hover:bg-[#029FAE] duration-300 ">
+                        <svg class="hover:stroke-white " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            fill="none">
+                            <path class=" stoke-[#0d2022]  " stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="1.5" d="M8.5 7.5 4 12m0 0 4.5 4.5M4 12h16" />
+                        </svg>
+                    </div>
+                    <div
+                        class=" prev-next-btn cursor-pointer flex items-center justify-center w-11 h-11 bg-slate-100 rounded-full shadow-md hover:bg-[#029FAE] duration-300 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                            <path class=" stoke-[#0d2022]  " stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="1.5" d="M15.5 7.5 20 12m0 0-4.5 4.5M20 12H4" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!-- opinions -->
+            <div class=" flex items-center justify-between w-full max-w-[1200px] mx-auto bg-sky-400/ mt-12 my-5 ">
+                <div class=" flex justify-center items-start flex-col w-full p-7 bg-white rounded-xl mx-3 shadow-md  ">
+                    <!-- text -->
+                    <p class=" text-[#9a97a7] text-lg font-medium capitalize border-l-2 pl-4 border-[#11A5B3] ">“Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt
+                        blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at
+                        ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod
+                        sit amet suscipit et“</p>
+                    <!-- user info -->
+                    <div class=" flex items-center justify-between w-full bg-indigo-700/ mt-5 ">
+                        <!-- info -->
+                        <div class=" flex justify-center items-center  ">
+                            <img src="/assets/images/profile (1).png" alt="profile">
+                            <div class=" flex items-start justify-center flex-col ml-4 ">
+                                <h6 class=" text-xl font-semibold text-slate-800 ">Kristin Watson</h6>
+                                <p class=" text-[#a9aab2] mt-1  ">Fasion Designer</p>
+                            </div>
+                        </div>
+                        <!-- qoute logo -->
+                        <svg class=" " width="97" height="76" viewBox="0 0 97 76" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.8001 37.2824C8.15751 37.2824 0.958344 29.8659 0.958344 18.877C0.958344 8.98829 9.21701 0.75 20.4029 0.75C32.6551 0.75 41.7083 10.6387 41.7083 25.7433C41.7083 60.0752 16.6743 73.808 0.958344 75.4583V60.3537C11.6145 58.4316 23.595 47.7212 24.1315 35.9037C23.595 36.1753 21.4692 37.2824 18.8001 37.2824Z"
+                                fill="#F0F2F3" />
+                            <path
+                                d="M73.1334 37.2824C62.4841 37.2824 55.2917 29.8659 55.2917 18.877C55.2917 8.98829 63.5504 0.75 74.7362 0.75C86.9884 0.75 96.0417 10.6387 96.0417 25.7433C96.0417 60.0752 71.0076 73.808 55.2917 75.4583V60.3537C65.9478 58.4316 77.9283 47.7212 78.4649 35.9037C77.9283 36.1753 75.8025 37.2824 73.1334 37.2824Z"
+                                fill="#F0F2F3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class=" flex justify-center items-start flex-col w-full p-7 bg-white rounded-xl mx-3 shadow-md  ">
+                    <!-- text -->
+                    <p class=" text-[#9a97a7] text-lg font-medium capitalize border-l-2 pl-4 border-[#11A5B3] ">“Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt
+                        blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at
+                        ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod
+                        sit amet suscipit et“</p>
+                    <!-- user info -->
+                    <div class=" flex items-center justify-between w-full bg-indigo-700/ mt-5 ">
+                        <!-- info -->
+                        <div class=" flex justify-center items-center  ">
+                            <img src="/assets/images/profile (2).png" alt="profile">
+                            <div class=" flex items-start justify-center flex-col ml-4 ">
+                                <h6 class=" text-xl font-semibold text-slate-800 ">Esther Howard</h6>
+                                <p class=" text-[#a9aab2] mt-1  ">Fasion Designer</p>
+                            </div>
+                        </div>
+                        <!-- qoute logo -->
+                        <svg width="97" height="76" viewBox="0 0 97 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.8001 37.2824C8.15751 37.2824 0.958344 29.8659 0.958344 18.877C0.958344 8.98829 9.21701 0.75 20.4029 0.75C32.6551 0.75 41.7083 10.6387 41.7083 25.7433C41.7083 60.0752 16.6743 73.808 0.958344 75.4583V60.3537C11.6145 58.4316 23.595 47.7212 24.1315 35.9037C23.595 36.1753 21.4692 37.2824 18.8001 37.2824Z"
+                                fill="#F0F2F3" />
+                            <path
+                                d="M73.1334 37.2824C62.4841 37.2824 55.2917 29.8659 55.2917 18.877C55.2917 8.98829 63.5504 0.75 74.7362 0.75C86.9884 0.75 96.0417 10.6387 96.0417 25.7433C96.0417 60.0752 71.0076 73.808 55.2917 75.4583V60.3537C65.9478 58.4316 77.9283 47.7212 78.4649 35.9037C77.9283 36.1753 75.8025 37.2824 73.1334 37.2824Z"
+                                fill="#F0F2F3" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Recently Added -->
+        <section class=" w-full py-8 bg-sky-300/ my-[58px] flex items-center justify-center flex-col  ">
+            <!-- title -->
+            <div class=" flex items-center justify-between max-w-[1230px] mx-auto w-full ">
+                <h2 class=" font-semibold text-[30px] text-slate-800  "> Recently Added </h2>
+                <div class=" flex items-center justify-between w-[100px] ">
+                    <div
+                        class="  prev-next-btn cursor-pointer flex items-center justify-center w-11 h-11 bg-slate-100 rounded-full shadow-md hover:bg-[#029FAE] duration-300 ">
+                        <svg class="hover:stroke-white " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            fill="none">
+                            <path class=" stoke-[#0d2022]  " stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="1.5" d="M8.5 7.5 4 12m0 0 4.5 4.5M4 12h16" />
+                        </svg>
+                    </div>
+                    <div
+                        class=" prev-next-btn cursor-pointer flex items-center justify-center w-11 h-11 bg-slate-100 rounded-full shadow-md hover:bg-[#029FAE] duration-300 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                            <path class=" stoke-[#0d2022]  " stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="1.5" d="M15.5 7.5 20 12m0 0-4.5 4.5M20 12H4" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!-- products  -->
+            <div class=" grid grid-cols-4 w-full  bg-blue-600/ max-w-[1250px] mt-14 gap-x-6 gap-y-16 p-4 ">
+                <!-- shop product -->
+                <div
+                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                    <!-- product image -->
+                    <img class=" w-full " src="/assets/images/product-image (1).png" alt="product-image" srcset="">
+                    <!-- product info -->
+                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
+                        <div class=" flex items-start justify-center flex-col  ">
+                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
+                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
+                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                        </div>
+                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
+                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- shop product -->
+                <div
+                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                    <!-- product image -->
+                    <img class=" w-full " src="/assets/images/product-image (8).png" alt="product-image" srcset="">
+                    <!-- product info -->
+                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
+                        <div class=" flex items-start justify-center flex-col  ">
+                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
+                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
+                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                        </div>
+                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
+                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- shop product -->
+                <div
+                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                    <!-- product image -->
+                    <img class=" w-full " src="/assets/images/product-image (7).png" alt="product-image" srcset="">
+                    <!-- product info -->
+                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
+                        <div class=" flex items-start justify-center flex-col  ">
+                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
+                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
+                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                        </div>
+                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
+                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- shop product -->
+                <div
+                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                    <!-- product image -->
+                    <img class=" w-full " src="/assets/images/product-image (6).png" alt="product-image" srcset="">
+                    <!-- product info -->
+                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
+                        <div class=" flex items-start justify-center flex-col  ">
+                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
+                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
+                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                        </div>
+                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
+                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
+                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <hr>
+
+
+        <footer class=" w-full py-14 mx-auto bg-sky-100/ mt-5 flex items-start justify-between max-w-[1240px]  mb-10 ">
+            <!-- logo and social links -->
+            <div class=" flex items-start justify-center flex-col gap-y-5 bg-red-500/ ">
+                <div class=" flex items-center justify-center gap-x-3 bg-red-400/ ">
+                    <img src="/assets/images/logo.png " alt="logo">
+                    <h1 class=" text-2xl font-semibold text-[#272343] ">Comforty</h1>
+                </div>
+                <p class=" w-full block text-[#7D7B8E] ">
+                    Vivamus tristique odio sit amet velit semper, <br>
+                    eu posuere turpis interdum. <br>
+                    Cras egestas purus
+                </p>
+                <div class=" w-60 flex items-center justify-between pl-2 ">
+                    <!-- facebook -->
+                    <svg  class=" w-5 h-5 " viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_1875)">
+                            <path
+                                d="M16 8C16 3.58167 12.4183 0 8 0C3.58167 0 0 3.58167 0 8C0 11.993 2.92533 15.3027 6.75 15.9027V10.3127H4.71867V8H6.75V6.23733C6.75 4.23267 7.94433 3.125 9.77167 3.125C10.6467 3.125 11.5623 3.28133 11.5623 3.28133V5.25H10.5537C9.56 5.25 9.25 5.86667 9.25 6.5V8H11.4687L11.114 10.3127H9.25V15.9027C13.0747 15.3027 16 11.9927 16 8Z"
+                                fill="#636270" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1_1875">
+                                <rect width="16" height="16" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <!-- twitter -->
+                    <svg  class=" w-5 h-5 " viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_1879)">
+                            <path
+                                d="M5.03333 14.5C11.07 14.5 14.3723 9.49801 14.3723 5.16134C14.3723 5.02067 14.369 4.87701 14.3627 4.73634C15.0052 4.27167 15.5596 3.69609 16 3.03667C15.4017 3.30267 14.7667 3.47667 14.116 3.55201C14.8008 3.14153 15.3136 2.49669 15.5593 1.73701C14.915 2.1189 14.2104 2.38831 13.4757 2.53367C12.9807 2.00745 12.3261 1.65898 11.6132 1.54216C10.9002 1.42534 10.1687 1.54667 9.53161 1.8874C8.89456 2.22812 8.38752 2.76925 8.08891 3.42709C7.79031 4.08493 7.71677 4.82284 7.87967 5.52667C6.575 5.46121 5.29865 5.1223 4.13336 4.53193C2.96806 3.94156 1.93984 3.1129 1.11533 2.09967C0.696305 2.82217 0.568091 3.67711 0.756747 4.49074C0.945403 5.30437 1.43677 6.01564 2.131 6.48001C1.60977 6.46349 1.09995 6.32318 0.643667 6.07067V6.11134C0.643231 6.8695 0.905349 7.60442 1.38547 8.19119C1.86559 8.77796 2.53409 9.18036 3.27733 9.33001C2.79463 9.46209 2.28801 9.48137 1.79667 9.38634C2.00644 10.0383 2.41454 10.6086 2.964 11.0175C3.51346 11.4264 4.17688 11.6536 4.86167 11.6673C4.18054 12.2025 3.40049 12.598 2.56623 12.8312C1.73197 13.0643 0.859899 13.1305 0 13.026C1.50191 13.9894 3.24899 14.501 5.03333 14.5Z"
+                                fill="#636270" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1_1879">
+                                <rect width="16" height="16" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <!-- instagram -->
+                    <svg  class=" w-5 h-5 " viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.6667 4.66667C10.6667 4.48986 10.7369 4.32029 10.8619 4.19526C10.987 4.07024 11.1565 4 11.3334 4C11.5102 4 11.6797 4.07024 11.8048 4.19526C11.9298 4.32029 12 4.48986 12 4.66667C12 4.84348 11.9298 5.01305 11.8048 5.13807C11.6797 5.2631 11.5102 5.33333 11.3334 5.33333C11.1565 5.33333 10.987 5.2631 10.8619 5.13807C10.7369 5.01305 10.6667 4.84348 10.6667 4.66667Z"
+                            fill="#636270" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8.00004 4.83337C7.16019 4.83337 6.35473 5.167 5.76087 5.76087C5.167 6.35473 4.83337 7.16019 4.83337 8.00004C4.83337 8.83989 5.167 9.64535 5.76087 10.2392C6.35473 10.8331 7.16019 11.1667 8.00004 11.1667C8.83989 11.1667 9.64535 10.8331 10.2392 10.2392C10.8331 9.64535 11.1667 8.83989 11.1667 8.00004C11.1667 7.16019 10.8331 6.35473 10.2392 5.76087C9.64535 5.167 8.83989 4.83337 8.00004 4.83337ZM5.83337 8.00004C5.83337 7.42541 6.06165 6.87431 6.46798 6.46798C6.87431 6.06165 7.42541 5.83337 8.00004 5.83337C8.57468 5.83337 9.12578 6.06165 9.53211 6.46798C9.93843 6.87431 10.1667 7.42541 10.1667 8.00004C10.1667 8.57468 9.93843 9.12578 9.53211 9.53211C9.12578 9.93843 8.57468 10.1667 8.00004 10.1667C7.42541 10.1667 6.87431 9.93843 6.46798 9.53211C6.06165 9.12578 5.83337 8.57468 5.83337 8.00004Z"
+                            fill="#636270" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.5054 1.88865C9.1756 1.63038 6.82444 1.63038 4.49468 1.88865C3.15335 2.03865 2.07002 3.09532 1.91268 4.44332C1.63628 6.80637 1.63628 9.19359 1.91268 11.5566C2.07002 12.9046 3.15268 13.9613 4.49468 14.1113C6.80535 14.3693 9.19468 14.3693 11.5054 14.1113C12.8467 13.9613 13.93 12.9046 14.0874 11.5566C14.3638 9.19359 14.3638 6.80637 14.0874 4.44332C13.93 3.09532 12.8474 2.03865 11.5054 1.88865ZM4.60535 2.88198C6.86155 2.6319 9.13848 2.6319 11.3947 2.88198C12.2813 2.98198 12.9914 3.68132 13.0947 4.55998C13.362 6.84553 13.362 9.15444 13.0947 11.44C12.9914 12.3186 12.2813 13.0186 11.3947 13.1173C9.13848 13.3674 6.86155 13.3674 4.60535 13.1173C3.71868 13.0186 3.00868 12.3186 2.90535 11.44C2.63805 9.15444 2.63805 6.84553 2.90535 4.55998C3.00868 3.68132 3.71868 2.98132 4.60535 2.88265V2.88198Z"
+                            fill="#636270" />
+                    </svg>
+                    <!-- pinterest -->
+                    <svg  class=" w-5 h-5 " viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_1893)">
+                            <path
+                                d="M8 0C3.58133 0 0 3.58133 0 8C0 11.3907 2.10933 14.2843 5.08433 15.45C5.01567 14.8157 4.95 13.8467 5.11267 13.1563C5.25933 12.5313 6.05 9.18133 6.05 9.18133C6.05 9.18133 5.80933 8.703 5.80933 7.99367C5.80933 6.88133 6.453 6.05 7.256 6.05C7.93733 6.05 8.26867 6.56267 8.26867 7.178C8.26867 7.86566 7.83133 8.89066 7.60633 9.84066C7.41867 10.6373 8.00633 11.2873 8.79067 11.2873C10.2123 11.2873 11.3063 9.78733 11.3063 7.625C11.3063 5.70933 9.93133 4.36867 7.96567 4.36867C5.69067 4.36867 4.353 6.075 4.353 7.84066C4.353 8.528 4.61867 9.26566 4.95 9.66566C5.01567 9.74366 5.025 9.81566 5.00633 9.89366C4.947 10.147 4.80967 10.6903 4.78433 10.8C4.75 10.9467 4.66867 10.978 4.51567 10.9063C3.51567 10.4407 2.89067 8.98133 2.89067 7.80633C2.89067 5.28133 4.725 2.96567 8.175 2.96567C10.95 2.96567 13.1063 4.94367 13.1063 7.58733C13.1063 10.344 11.3687 12.5623 8.95633 12.5623C8.147 12.5623 7.38433 12.1407 7.122 11.6437C7.122 11.6437 6.722 13.172 6.625 13.547C6.44367 14.2403 5.95633 15.1127 5.63133 15.6437C6.3986 15.8804 7.19706 16.0005 8 16C12.4187 16 16 12.4187 16 8C16 3.58133 12.4187 0 8 0Z"
+                                fill="#636270" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1_1893">
+                                <rect width="16" height="16" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <!-- youtube -->
+                    <svg  class=" w-5 h-5 " viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.8407 4.79995C15.8407 4.79995 15.6843 3.69661 15.203 3.21261C14.5937 2.57495 13.9123 2.57195 13.6 2.53428C11.3627 2.37195 8.00333 2.37195 8.00333 2.37195H7.99667C7.99667 2.37195 4.63767 2.37195 2.4 2.53428C2.08733 2.57195 1.40633 2.57495 0.796667 3.21261C0.316 3.69661 0.162667 4.79995 0.162667 4.79995C0.162667 4.79995 0 6.09662 0 7.39062V8.60295C0 9.89695 0.159333 11.1936 0.159333 11.1936C0.159333 11.1936 0.315667 12.2969 0.793667 12.7813C1.403 13.4186 2.203 13.3969 2.55933 13.4656C3.84067 13.5876 8 13.6249 8 13.6249C8 13.6249 11.3623 13.6186 13.6 13.4593C13.9127 13.4219 14.5937 13.4186 15.2033 12.7813C15.6843 12.2969 15.8407 11.1936 15.8407 11.1936C15.8407 11.1936 16 9.90028 16 8.60328V7.39095C16 6.09728 15.8407 4.80028 15.8407 4.80028V4.79995ZM6.34667 10.0749V5.57828L10.6683 7.83428L6.34667 10.0749Z"
+                            fill="#636270" />
+                    </svg>
+                </div>
+            </div>
+            <!-- category -->
+             <div class=" flex items-start justify-center flex-col bg-yellow-100/ gap-y-2 " >
+                <h4 class=" font-medium text-[#9A9CAA] text-[15px] " >CATEGORY</h4>
+                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Sofa</h5>
+                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Armchair</h5>
+                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Wing Chair</h5>
+                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Desk Chair</h5>
+                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Wooden Chair</h5>
+                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Park Bench</h5>
+             </div>
+            <!-- support -->
+            <div class=" flex items-start justify-center flex-col bg-yellow-100/ gap-y-2 " >
+                <h4 class=" font-medium text-[#9A9CAA] text-[15px] " >SUPPORT</h4>
+                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Help & Support</h5>
+                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Terms & Conditions</h5>
+                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Privacy Policy</h5>
+                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Help</h5>
+             </div>
+             <!-- Newsletter -->
+              <div class=" flex items-start justify-center flex-col bg-yellow-100/ gap-y-2 " >
+                <h4 class=" font-medium text-[#9A9CAA] text-[15px" >NEWSLETTER</h4>
+                <!-- email grabber -->
+                <div class=" flex items-center justify-between  w-full bg-indigo-100/ gap-x-3 mt-4  " >
+                    <div class=" flex items-center justify-center  border-[1px] border-stone-200 rounded-lg w-64 " >
+                        <input class=" w-full py-2.5 px-6 outline-none border-none bg-transparent   " placeholder="Your Email..." type=" text">
+                    </div>
+                    <button class=" font-medium text-white bg-[#029FAE] rounded-lg px-6 py-2.5 tracking-wide " >Subscribe</button>
+                </div>
+                <p class=" text-[#b3b4b8] mt-4 " >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                     Nullam tincidunt erat enim.
+                </p>
+              </div>
+        </footer>
+
+
+    </div>
+</body>
+
+</html>
