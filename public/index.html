@@ -12,121 +12,141 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
-<body class="  font-inter bg-white flex items-center justify-center flex-col  ">
-
+<body class=" relative  font-inter bg-white flex items-center justify-center flex-col  ">
     <div class="   w-full ">
 
 
-
-        <header class=" w-full bg-green-400 flex items-center justify-center flex-col mx-auto ">
-            <!-- website first message -->
-            <div class=" bg-[#272343]  w-full  flex justify-center flex-col items-center ">
-                <div class=" bg-slate-600/ h-10 max-w-screen-xl w-full flex items-center justify-between px-5 ">
-                    <p class=" text-sm flex items-center text-[#BEBDC6]  ">
-                        <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none">
-                            <path stroke="#BEBDC6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M13.333 4.5 6 11.833 2.667 8.5" /></svg>
-                        Free shipping on all orders over $50
-                    </p>
-                    <div class=" flex items-center justify-center gap-x-5 ">
-                        <a class=" text-sm   flex items-center text-[#BEBDC6] " href="#">
-                            Eng
-                            <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="9" height="5" fill="none">
-                                <path stroke="#BEBDC6" stroke-linecap="round" stroke-linejoin="round"
-                                    d="m8 .75-3.5 3.5L1 .75" /></svg>
-                        </a>
-                        <a class=" text-sm   text-[#BEBDC6] " href="#">Faqs</a>
-                        <a class=" text-sm  flex items-center text-[#BEBDC6] " href="#">
-                            <svg class=" mr-1 " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
-                                <g stroke="#BEBDC6" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#a)"
-                                    opacity=".7">
-                                    <path
-                                        d="M8 14.667A6.667 6.667 0 1 0 8 1.333a6.667 6.667 0 0 0 0 13.334ZM8 5.333V8M8 10.667h.006" />
-                                </g>
-                                <defs>
-                                    <clipPath id="a">
-                                        <path fill="#BEBDC6" d="M0 0h16v16H0z" />
-                                    </clipPath>
-                                </defs>
+        <header class=" w-full bg-green-400/ flex items-center justify-center flex-col mx-auto  shadow-sm ">
+            <div class=" w-full fixed top-0 z-30 ">
+                <!-- website first message -->
+                <div class="  bg-[#272343]  w-full  flex justify-center flex-col items-center ">
+                    <div
+                        class=" bg-slate-600/ h-8  lgx:max-w-screen-xl lsx:max-w-[1330px] lax:max-w-full mgx:w-full lsx:w-full lax:px-8 mgx:px-6 msx:px-4 sgx:px-3 w-full flex items-center mm:justify-center max:justify-between ggg:justify-between lsx:px-0 ">
+                        <p class=" mgx:text-sm msx:text-[13px] sgx:text-[12px] flex items-center text-[#BEBDC6]  ">
+                            <svg class="mr-2 sgx:scale-75 mgx:scale-100 " xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none">
+                                <path stroke="#BEBDC6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M13.333 4.5 6 11.833 2.667 8.5" /></svg>
+                            Free shipping on all orders over $50
+                        </p>
+                        <div class=" mm:hidden ggg:flex items-center justify-center gap-x-5 ">
+                            <a class=" mgx:text-sm msx:text-[13px] sgx:text-[12px]  flex items-center text-[#BEBDC6] " href="#">
+                                Eng
+                                <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="9" height="5" fill="none">
+                                    <path stroke="#BEBDC6" stroke-linecap="round" stroke-linejoin="round"
+                                        d="m8 .75-3.5 3.5L1 .75" /></svg>
+                            </a>
+                            <a class=" mgx:text-sm msx:text-[13px] sgx:text-[12px]  text-[#BEBDC6] " href="#">Faqs</a>
+                            <a class=" mgx:text-sm msx:text-[13px] sgx:text-[12px] flex items-center text-[#BEBDC6] " href="#">
+                                <svg class=" mr-1 " xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="none">
+                                    <g stroke="#BEBDC6" stroke-linecap="round" stroke-linejoin="round"
+                                        clip-path="url(#a)" opacity=".7">
+                                        <path
+                                            d="M8 14.667A6.667 6.667 0 1 0 8 1.333a6.667 6.667 0 0 0 0 13.334ZM8 5.333V8M8 10.667h.006" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="a">
+                                            <path fill="#BEBDC6" d="M0 0h16v16H0z" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                Need Help
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- sticky header -->
+                <div class="  bg-[#F0F2F3] w-full   ">
+                    <div
+                        class=" mx-auto lgx:max-w-screen-xl lsx:max-w-[1330px]  lgx:h-20 lsx:h-[72px] lax:h-[66px] mgx:h-[60px] sgx:h-[55px]  msx:h-[54px] lax:max-w-full mgx:w-full lsx:w-full lax:px-8 mgx:px-6 msx:px-5 sgx:px-4 flex items-center justify-between ">
+                        <!-- icon  -->
+                        <div class=" flex items-center justify-center gap-x-3 bg-red-400/ ">
+                            <img class=" mgx:scale-100 msx:scale-90 sgx:scale-[85%] " src="/assets/images/logo.png " alt="logo">
+                            <h1 class=" mgx:text-2xl msx:text-xl sgx:text-lg font-semibold text-[#272343] ">Comforty</h1>
+                        </div>
+                        <!-- search input -->
+                        <div class=" sgx:hidden max:flex  items-center justify-between  bg-white lax:p-3 mgx:p-2.5 msx:py-2.5 msx:px-3 sgx:px-2.5 sgx:py-2 rounded-lg shadow-sm basis-1/4 ">
+                            <input class=" w-full outline-none border-none lax:h-5 mgx:h-4 mx-1 mgx:text-base msx:text-sm sgx:text sgx:text-[13.5px] " type="text" name="search"
+                                id="search" placeholder="Search here...">
+                            <svg class=" mgx:mx-1 msx:mx-0 sgx:mx-0 cursor-pointer " xmlns="http://www.w3.org/2000/svg" width="23" height="22"
+                                fill="none">
+                                <path stroke="#272343" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M10.583 17.417a7.333 7.333 0 1 0 0-14.667 7.333 7.333 0 0 0 0 14.667ZM19.75 19.25l-3.988-3.988" />
                             </svg>
-                            Need Help
-                        </a>
+                        </div>
+                        <!-- hyper links -->
+                        <div class=" flex items-center justify-center  gap-x-3 ">
+                            <a class=" relative flex items-center justify-evenly mgx:gap-x-4 msx:gap-x-2  sgx:gap-x-2 bg-white mgx:p-3 msx:p-2 sgx:p-2 rounded-lg "
+                                href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                                    <path stroke="#272343" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        d="m2.52 2.98 1.908.33.882 10.516a1.65 1.65 0 0 0 1.65 1.515h10.001a1.65 1.65 0 0 0 1.635-1.417l.871-6.011a1.231 1.231 0 0 0-1.041-1.394c-.059-.006-13.692-.01-13.692-.01M12.948 9.896h2.542" />
+                                    <path fill="#272343" fill-rule="evenodd" stroke="#272343" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M6.558 18.52a.499.499 0 1 1 .042.997.499.499 0 0 1-.042-.997ZM16.899 18.52a.5.5 0 1 1 0 .999.5.5 0 0 1 0-1Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span class=" text-[#272343] font-medium ">cart</span>
+                                <span id="product-counter"
+                                    class=" w-5 h-5 text-[12px] rounded-full bg-[#007580] text-slate-200 font-medium flex items-center justify-center  ">2</span>
+                            </a>
+                            <a class=" hidden mgx:block bg-white p-3 rounded-lg " href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                                    <path stroke="#272343" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        d="M2.633 10.632c-.984-3.071.165-6.581 3.39-7.62A5.507 5.507 0 0 1 11 3.848c1.334-1.031 3.274-1.38 4.968-.836 3.224 1.039 4.381 4.549 3.398 7.62C17.836 15.498 11 19.248 11 19.248s-6.785-3.692-8.367-8.617v0Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <a class=" hidden mgx:block bg-white p-3 rounded-lg " href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                                    <path stroke="#272343" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        d="M10.986 14.067c-3.545 0-6.572.536-6.572 2.683s3.007 2.703 6.572 2.703c3.545 0 6.573-.538 6.573-2.683 0-2.146-3.009-2.703-6.573-2.703v0Z"
+                                        clip-rule="evenodd" />
+                                    <path stroke="#272343" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.429"
+                                        d="M10.986 11.006a4.213 4.213 0 1 0-4.213-4.213 4.198 4.198 0 0 0 4.183 4.213h.03Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class=" bg-[#F0F2F3] w-full  ">
-                <div class=" mx-auto max-w-screen-xl h-20 flex items-center justify-between ">
-                    <!-- icon  -->
-                    <div class=" flex items-center justify-center gap-x-3 bg-red-400/ ">
-                        <img src="/assets/images/logo.png " alt="logo">
-                        <h1 class=" text-2xl font-semibold text-[#272343] ">Comforty</h1>
-                    </div>
-                    <!-- search input -->
-                    <div class=" flex items-center justify-between  bg-white p-3 rounded-lg shadow-sm basis-1/4 ">
-                        <input class=" w-full outline-none border-none h-5 mx-1  " type="text" name="search" id="search"
-                            placeholder="Search here...">
-                        <svg class=" mx-1 cursor-pointer " xmlns="http://www.w3.org/2000/svg" width="23" height="22"
-                            fill="none">
-                            <path stroke="#272343" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M10.583 17.417a7.333 7.333 0 1 0 0-14.667 7.333 7.333 0 0 0 0 14.667ZM19.75 19.25l-3.988-3.988" />
+            <div class=" w-full bg-white lgx:mt-[110px] lsx:mt-[100px] lax:mt-24 mgx:mt-[95px] msx:mt-[88px] sgx:mt-[87px]  ">
+                <div
+                    class=" mx-auto lgx:max-w-screen-xl lsx:max-w-[1350px] lax:max-w-full mgx:w-full px-5 lax:px-5 lsx:px-0 lsx:h-20 lax:h-16 mgx:h-16 msx:h-[54px] sgx:h-14 flex items-center justify-between ">
+                    <!-- hambergur menu -->
+                     <div class=" block mgx:hidden  " >
+                        <li
+                        class=" msx:text-[14px] max:text-[13.5px] sgx:text-[13px]  cursor-pointer text-[#272343] font-medium flex items-center lax:gap-x-4 msx:gap-x-2 sgx:gap-x-2 lsx:px-5 lax:px-3 lax:py-2 msx:py-2 msx:px-3 sgx:p-2 bg-sky-50/ rounded-lg border-[1.7px] border-stone-300  ">
+                        <svg class="  " xmlns="http://www.w3.org/2000/svg" width="18" height="15" fill="none">
+                            <path fill="#272343" d="M18 2.5H0v-2h18v2ZM18 8.5H0v-2h18v2ZM18 14.5H0v-2h18v2Z" />
                         </svg>
-                    </div>
-                    <!-- hyper links -->
-                    <div class=" flex items-center justify-center  gap-x-3 ">
-                        <a class=" flex items-center justify-evenly gap-x-4  bg-white p-3 rounded-lg " href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
-                                <path stroke="#272343" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="m2.52 2.98 1.908.33.882 10.516a1.65 1.65 0 0 0 1.65 1.515h10.001a1.65 1.65 0 0 0 1.635-1.417l.871-6.011a1.231 1.231 0 0 0-1.041-1.394c-.059-.006-13.692-.01-13.692-.01M12.948 9.896h2.542" />
-                                <path fill="#272343" fill-rule="evenodd" stroke="#272343" stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="1.5"
-                                    d="M6.558 18.52a.499.499 0 1 1 .042.997.499.499 0 0 1-.042-.997ZM16.899 18.52a.5.5 0 1 1 0 .999.5.5 0 0 1 0-1Z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            <span class=" text-[#272343] font-medium ">cart</span>
-                            <span id="product-counter"
-                                class=" w-5 h-5 text-[12px] rounded-full bg-[#007580] text-slate-200 flex items-center justify-center  ">2</span>
-                        </a>
-                        <a class=" bg-white p-3 rounded-lg " href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
-                                <path stroke="#272343" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M2.633 10.632c-.984-3.071.165-6.581 3.39-7.62A5.507 5.507 0 0 1 11 3.848c1.334-1.031 3.274-1.38 4.968-.836 3.224 1.039 4.381 4.549 3.398 7.62C17.836 15.498 11 19.248 11 19.248s-6.785-3.692-8.367-8.617v0Z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                        <a class=" bg-white p-3 rounded-lg " href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
-                                <path stroke="#272343" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M10.986 14.067c-3.545 0-6.572.536-6.572 2.683s3.007 2.703 6.572 2.703c3.545 0 6.573-.538 6.573-2.683 0-2.146-3.009-2.703-6.573-2.703v0Z"
-                                    clip-rule="evenodd" />
-                                <path stroke="#272343" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="1.429"
-                                    d="M10.986 11.006a4.213 4.213 0 1 0-4.213-4.213 4.198 4.198 0 0 0 4.183 4.213h.03Z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class=" w-full bg-white ">
-                <div class=" mx-auto max-w-screen-xl h-20 flex items-center justify-between ">
+                        All Categories
+                    </li>
+                     </div>
                     <!-- navbar -->
-                    <nav class="  bg-violet-300/ ">
+                    <nav class=" mgx:block hidden bg-violet-300/ ">
                         <ul class=" flex items-center justify-center gap-x-10 ">
                             <li
-                                class=" cursor-pointer text-[#272343] font-medium flex items-center gap-x-4 px-5 py-3 bg-sky-50/ rounded-lg border-[1px] border-slate-300  ">
+                                class=" cursor-pointer text-[#272343] font-medium flex items-center lax:gap-x-4 mgx:gap-x-2 lsx:px-5 lax:px-3 lax:py-2 mgx:py-2 mgx:px-3 bg-sky-50/ rounded-lg border-[1px] border-slate-300  ">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" fill="none">
                                     <path fill="#272343" d="M18 2.5H0v-2h18v2ZM18 8.5H0v-2h18v2ZM18 14.5H0v-2h18v2Z" />
                                 </svg>
                                 All Categories
                             </li>
-                            <li class=" font-medium text-[#636270] cursor-pointer ">Shop</li>
-                            <li class=" font-medium text-[#636270] cursor-pointer ">Product</li>
-                            <li class=" font-medium text-[#636270] cursor-pointer ">Pages</li>
-                            <li class=" font-medium text-[#636270] cursor-pointer ">About</li>
+                            <li class=" font-medium lgx:text-base mgx:text-sm text-[#636270] cursor-pointer ">Shop</li>
+                            <li class=" font-medium lgx:text-base mgx:text-sm text-[#636270] cursor-pointer ">Product
+                            </li>
+                            <li class=" font-medium lgx:text-base mgx:text-sm text-[#636270] cursor-pointer ">Pages</li>
+                            <li class=" font-medium lgx:text-base mgx:text-sm text-[#636270] cursor-pointer ">About</li>
                         </ul>
                     </nav>
                     <!-- cantact info -->
-                    <p class=" font-medium text-[#888795]  ">
+                    <p class=" sgx:hidden fff:inline-block  font-medium lax:text-base mgx:text-[15px] msx:text-[14.5px] sgx:text-[14px] text-[#888795]  ">
                         Contact:
                         <span class="text-[#151227] ">(808) 555-0111</span>
                     </p>
@@ -137,20 +157,27 @@
 
 
         <!-- website banner -->
-        <section class=" w-full  flex justify-center mt-2 mb-24 ">
+        <section class=" w-full  flex justify-center lgx:mt-2 msx:mt-[1.99px] lax:mb-24 ">
             <div
-                class=" relative w-full max-w-[1450px]  h-[720px] rounded-b-3xl bg-[#ebedee]  flex items-center justify-evenly px-16 ">
+                class=" relative w-full max-w-[1450px]  lgx:h-[680px] lsx:h-[560px] lax:h-[500px] mgx:h-[470px] msx:h-[400px] max:h-[360px] sgx:h-[280px] lax:rounded-none lgx:rounded-b-3xl bg-[#ebedee]  flex items-center lax:justify-evenly mgx:justify-evenly msx:justify-evenly max:justify-evenly sgg:justify-around sgx:justify-between lax:px-16 mgx:px-10 msx:px-0 ">
                 <!-- banner title -->
-                <div class="z-10 flex items-start justify-center flex-col mt-10 ">
-                    <p class=" font-medium text-[#4b4c4d] ">WELCOME TO CHAIRY</p>
+                <div class="z-10 flex items-start justify-center flex-col lgx:mt-7 sgx:pl-10 sgg:pl-0 ">
+                    <p class=" font-medium lgx:text-base lax:text-sm mgx:text-[12px] msx:text-[14px] sgx:text-[14px] text-[#4b4c4d] ">WELCOME TO CHAIRY
+                    </p>
                     <h1
-                        class=" leading-tight text-slate-800 font-bold bg-red-600/ font-inter text-[60px] flex items-start justify-center flex-col  ">
+                        class=" mgx:flex sgx:hidden leading-tight text-slate-800 font-bold bg-red-600/ font-inter lgx:text-[60px] lsx:text-[54px] lax:text-[45px] mgx:text-[40px] msx:text-[43px] lax:leading-snug msx:leading-tight mgx:leading-tight  items-start justify-center flex-col  ">
                         Best Furniture <br>
                         Collection For Your <br>
                         Interior.
                     </h1>
+                    <h1
+                    class=" mgx:hidden sgx:flex leading-tight text-slate-800 font-bold bg-red-600/ font-inter lgx:text-[60px] lsx:text-[54px] lax:text-[45px] mgx:text-[40px] msx:text-[39px] max:text-[38px] sgx:text-[32px] lax:leading-snug msx:leading-tight mgx:leading-none max:leading-tight items-start justify-center flex-col  ">
+                    Best Furniture <br>
+                    Collection For <br> 
+                    Your Interior.
+                </h1>
                     <button
-                        class=" text-white font-medium text-sm mt-4 flex justify-evenly py-3  px-2 w-36 bg-[#029FAE] rounded-lg ">
+                        class=" hover:scale-110 duration-300 text-white font-medium text-sm lsx:mt-4 lax:mt-3 mgx:mt-2 flex justify-evenly py-3 lax:scale-100 mgx:scale-90 max:scale-[86%] sgx:scale-[84%] sgx:-ml-2 mgx:-ml-1 msx:mt-3 max:mt-2 sgx:mt-3 lax:ml-0 px-2 w-36 bg-[#029FAE] rounded-lg ">
                         Shop Now
                         <svg class="  " xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
                             <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -158,66 +185,97 @@
                         </svg>
                     </button>
                 </div>
+                <!-- sofa banner lg  -->
+                 <div class=" relative flex items-center justify-center mgx:hidden  max:flex sgx:hidden sgg:flex  rounded-full mb-6 " >
+                    <img class=" msx:w-44 max:w-40 sgx:w-28 z-20 "
+                    src="/assets/images/banner-sofa.png" alt="banner-sofa">
+                    <!-- photo back-bg -->
+                    <div class=" absolute mb-5 msx:-right-8 -top-7 z-10 bg-[#c3c5c7] max:rounded-[60px] sgx:rounded-[40px] opacity-75 msx:h-[206px] max:h-[180px] sgx:h-[130px] msx:w-[226px] max:w-[190px] sgx:w-[140px] " ></div>
+                 </div>
                 <!-- banner image -->
-                <div class="z-10 flex justify-center items-center relative mb-10 ">
-                    <img class=" xl:w-[400px]  " src="/assets/images/banner-sofa.png" alt="banner-sofa">
-                    <img class=" w-28 absolute -top-3 -right-10 " src="/assets/images/discount.png" alt="Discount">
+                <div class=" sgx:hidden  z-10 mgx:flex justify-center items-center relative mb-16 ">
+                    <img class=" lgx:w-[380px] lsx:w-[320px] lax:w-[280px] mgx:w-[250px] msx:w-[230px] "
+                        src="/assets/images/banner-sofa.png" alt="banner-sofa">
+                    <img class=" lgx:w-28 lsx:w-24 lax:w-24 msx:w-20 mgx:w-20 max:w-16  absolute -top-3 -right-10 "
+                        src="/assets/images/discount.png" alt="Discount">
                 </div>
                 <!-- bg shape -->
-                <img class=" absolute top-0 right-[7%] w-[620px] " src="/assets/images/BG Shapes.png" alt="BG-Shape">
+                <img class="sgx:hidden mgx:block absolute top-0 lgx:right-[7%] lsx:right-[10%] lax:right-[150px] mgx:right-[13%] lgx:w-[620px] lsx:w-[550px] lax:w-[440px] mgx:w-[380px] msx:w-[300px] "
+                    src="/assets/images/BG Shapes.png" alt="BG-Shape">
                 <!-- slider prev and next buttons -->
                 <div
-                    class=" absolute top-1/2 cursor-pointer left-12 flex items-center justify-center w-11 h-11 bg-white rounded-full shadow-sm ">
+                    class=" sgx:hidden flex absolute top-1/2 cursor-pointer left-12  items-center justify-center w-11 h-11 bg-white rounded-full shadow-sm ">
                     <svg class=" scale-[85%] " xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
                         <path stroke="#0d2022" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                             d="M8.5 7.5 4 12m0 0 4.5 4.5M4 12h16" />
                     </svg>
                 </div>
                 <div
-                    class=" absolute top-1/2 cursor-pointer right-12 flex items-center justify-center w-11 h-11 bg-white rounded-full shadow-sm ">
+                    class=" sgx:hidden flex absolute top-1/2 cursor-pointer right-12  items-center justify-center w-11 h-11 bg-white rounded-full shadow-sm ">
                     <svg class=" scale-[85%] " xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
                         <path stroke="#0d2022" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                             d="M15.5 7.5 20 12m0 0-4.5 4.5M20 12H4" />
                     </svg>
                 </div>
                 <!-- slider dots -->
-                <div class=" absolute  bottom-24 flex items-center justify-evenly w-20 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none">
+                <div
+                    class="sgx:hidden max:flex flex-row absolute  lax:bottom-24 mgx:bottom-[68px] msx:bottom-[35px] max:bottom-8 flex items-center justify-evenly lgx:w-20 lsx:w-16 lax:w-14 mgx:w-14 msx:w-12 max:w-11 ">
+                    <svg class=" max:scale-[68%] msx:scale-[72%] mgx:scale-75 lax:scale-100 " xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                        fill="none">
                         <circle cx="6" cy="6" r="6" fill="#9A9CAA" opacity=".4" /></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none">
+                    <svg class=" max:scale-[68%] msx:scale-[72%] mgx:scale-75 lax:scale-100 " xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                        fill="none">
                         <circle cx="6" cy="6" r="6" fill="#272343" /></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none">
+                    <svg class=" max:scale-[68%] msx:scale-[72%] mgx:scale-75 lax:scale-100 " xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                        fill="none">
                         <circle cx="6" cy="6" r="6" fill="#9A9CAA" opacity=".4" /></svg>
                 </div>
                 <!-- shop products options -->
                 <div
-                    class=" gap-x-7 flex items-center justify-evenly bg-white w-full py-9 px-6 rounded-xl max-w-[1160px] h-32 shadow-md z-20 absolute -bottom-[67px] ">
-                    <div class="flex items-center justify-evenly gap-x-3">
-                        <img class=" scale-75 " src="/assets/images/box.png" alt="box">
+                    class=" hidden mgx:flex lax:gap-x-7 mgx:gap-x-4  items-center justify-evenly bg-white w-full lgx:py-9 lsx:py-6 px-6 rounded-xl lsx:max-w-[1120px] lax:w-[75%] mgx:w-[68%] lgx:h-[140px] lax:h-[110px] mgx:h-[90px] shadow-md z-20 absolute lax:-bottom-[50px] lgx:-bottom-[69px] mgx:-bottom-[40px] ">
+                    <div class="flex items-center justify-evenly lax:gap-x-3 mgx:gap-x-0.5 ">
+                        <img class=" lax:scale-75 mgx:scale-[65%] " src="/assets/images/box.png" alt="box">
                         <div class="  block ">
-                            <h3 class=" font-medium text-slate-800 text-lg ">Discount</h3>
-                            <p class=" font-normal text-[15px] text-slate-400 ">Every week new sales</p>
+                            <h3
+                                class=" font-medium text-slate-800 lgx:text-lg lsx:text-[17.5px] lax:text-[16px] mgx:text-[14px] ">
+                                Discount</h3>
+                            <p
+                                class=" hidden lax:block font-normal lgx:text-base lsx:mt-1 lgx:mt-0 lsx:text-[15px] lax:text-xs text-slate-400 ">
+                                Every week new sales</p>
                         </div>
                     </div>
-                    <div class="flex items-center justify-evenly gap-x-3">
-                        <img class=" scale-75 " src="/assets/images/delivery-truck.png" alt="delivery-truck">
+                    <div class="flex items-center justify-evenly lax:gap-x-3 mgx:gap-x-0.5 ">
+                        <img class=" lax:scale-75 mgx:scale-[65%] " src="/assets/images/delivery-truck.png"
+                            alt="delivery-truck">
                         <div class="  block ">
-                            <h3 class=" font-medium text-slate-800 text-lg ">Free Delivery</h3>
-                            <p class=" font-normal text-[15px] text-slate-400 ">100% Free for all orders</p>
+                            <h3
+                                class=" font-medium text-slate-800 lgx:text-lg lsx:text-[17.5px] lax:text-[16px] mgx:text-[14px] ">
+                                Free Delivery</h3>
+                            <p
+                                class=" hidden lax:block font-normal lgx:text-base lsx:mt-1 lgx:mt-0 lsx:text-[15px] lax:text-xs text-slate-400 ">
+                                100% Free for all orders</p>
                         </div>
                     </div>
-                    <div class="flex items-center justify-evenly gap-x-3">
-                        <img class=" scale-75 " src="/assets/images/24-hours.png" alt="24-hours">
+                    <div class="flex items-center justify-evenly lax:gap-x-3 mgx:gap-x-0.5 ">
+                        <img class=" lax:scale-75 mgx:scale-[65%] " src="/assets/images/24-hours.png" alt="24-hours">
                         <div class="  block ">
-                            <h3 class=" font-medium text-slate-800 text-lg ">Great Support 24/7</h3>
-                            <p class=" font-normal text-[15px] text-slate-400 ">We care your experiences</p>
+                            <h3
+                                class=" font-medium text-slate-800 lgx:text-lg lsx:text-[17.5px] lax:text-[16px] mgx:text-[14px] ">
+                                Great Support 24/7</h3>
+                            <p
+                                class=" hidden lax:block font-normal lgx:text-base lsx:mt-1 lgx:mt-0 lsx:text-[15px] lax:text-xs text-slate-400 ">
+                                We care your experiences</p>
                         </div>
                     </div>
-                    <div class="flex items-center justify-evenly gap-x-3">
-                        <img class=" scale-75 " src="/assets/images/shield.png" alt="shield">
+                    <div class="flex items-center justify-evenly lax:gap-x-3 mgx:gap-x-0.5 ">
+                        <img class=" lax:scale-75 mgx:scale-[65%] " src="/assets/images/shield.png" alt="shield">
                         <div class="  block ">
-                            <h3 class=" font-medium text-slate-800 text-lg ">Secure Payment</h3>
-                            <p class=" font-normal text-[15px] text-slate-400 ">100% Secure Payment Method</p>
+                            <h3
+                                class=" font-medium text-slate-800 lgx:text-lg lsx:text-[17.5px] lax:text-[16px] mgx:text-[14px] ">
+                                Secure Payment</h3>
+                            <p
+                                class=" hidden lax:block font-normal lgx:text-base lsx:mt-1 lgx:mt-0 lsx:text-[15px] lax:text-xs text-slate-400 ">
+                                100% Secure Payment Method</p>
                         </div>
                     </div>
                 </div>
@@ -227,38 +285,41 @@
 
 
         <!-- brands group -->
-        <div class="  bg-fuchsia-400/ w-full mx-auto h-32 flex items-center justify-between max-w-[1180px] mt-4 p-8  ">
-            <img src="/assets/images/Logo (1).png" alt="brand">
-            <img src="/assets/images/Logo (2).png" alt="brand">
-            <img src="/assets/images/Logo (3).png" alt="brand">
-            <img src="/assets/images/Logo (4).png" alt="brand">
-            <img src="/assets/images/Logo (5).png" alt="brand">
-            <img src="/assets/images/Logo (6).png" alt="brand">
-            <img src="/assets/images/Logo (7).png" alt="brand">
+        <div
+            class="  bg-fuchsia-400/ w-full mx-auto lax:h-32 flex items-center justify-between mgx:justify-evenly sgx:justify-center max-w-[1180px] lax:mt-4 mgx:mt-12 lax:p-8 mgx:py-4 sgx:py-3 mgx:px-6 msx:px-4 max:px-3 ">
+            <img class=" lgx:scale-100 lax:scale-[80%] mgx:scale-75 msx:scale-[72%] max:scale-[68%] sgx:scale-[62%]  max:inline-block sgx:hidden " src="/assets/images/Logo (1).png" alt="brand">
+            <img class=" lgx:scale-100 lax:scale-[80%] mgx:scale-75 mgx:block sgx:hidden " src="/assets/images/Logo (2).png" alt="brand">
+            <img class=" lgx:scale-100 lax:scale-[80%] mgx:scale-75 msx:scale-[72%] max:scale-[68%] sgx:scale-[62%] " src="/assets/images/Logo (3).png" alt="brand">
+            <img class=" lgx:scale-100 lax:scale-[80%] mgx:scale-75 msx:scale-[72%] max:scale-[68%] sgx:scale-[62%] " src="/assets/images/Logo (4).png" alt="brand">
+            <img class=" lgx:scale-100 lax:scale-[80%] mgx:scale-75 msx:scale-[72%] max:scale-[68%] sgx:scale-[62%] " src="/assets/images/Logo (5).png" alt="brand">
+            <img class=" lgx:scale-100 lax:scale-[80%] mgx:scale-75 msx:scale-[72%] max:scale-[68%] sgx:scale-[62%] max:inline-block sgx:hidden  " src="/assets/images/Logo (6).png" alt="brand">
+            <img class=" lgx:scale-100 lax:scale-[80%] mgx:scale-75 msx:scale-[72%] max:scale-[68%] sgx:scale-[62%]  max:inline-block sgx:hidden " src="/assets/images/Logo (7).png" alt="brand">
         </div>
 
 
 
         <!-- category slider -->
-        <div class=" bg-yellow-500/ mx-auto w-full max-w-[1150px] flex items-center justify-center flex-col mt-10  ">
+        <div
+            class=" sgx:hidden max:flex bg-yellow-500/ mx-auto w-full max-w-[1150px] items-center justify-center flex-col lax:mt-10 mgx:mt-8 mgx:w-[90%] msx:w-[90%] max:w-[87%] lax:w-full ">
             <!-- title and prev and next  buttons-->
             <div class="max-w-[1420px]   flex items-center justify-between w-full ">
-                <h2 class=" text-3xl font-semibold text-slate-800 ">Top Categories</h2>
-                <div class=" flex items-center justify-between w-[100px] ">
+                <h2 class=" lsx:text-[31px] lax:text-[25px] mgx:text-[22px] msx:text-[20px] max:text-[18px] font-semibold text-slate-800 ">Top
+                    Categories</h2>
+                <div class=" flex items-center justify-between mgx:w-[100px] ">
                     <div
-                        class=" cursor-pointer flex items-center justify-center w-11 h-11 bg-slate-100 rounded-full shadow-md ">
-                        <svg class=" scale-[85%] " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        class="  prev-next-btn cursor-pointer flex items-center justify-center w-11 h-11 bg-slate-200 lsx:scale-100 lax:scale mgx:scale-[80%]-msx:scale-[75%] 90 mgx:scale-[80%] msx:scale-75 max:scale-[73%] rounded-full shadow-sm hover:bg-[#029FAE] duration-500 ">
+                        <svg class="hover:stroke-white  " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             fill="none">
-                            <path stroke="#0d2022" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M8.5 7.5 4 12m0 0 4.5 4.5M4 12h16" />
+                            <path class=" stoke-[#0d2022]  " stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="1.5" d="M8.5 7.5 4 12m0 0 4.5 4.5M4 12h16" />
                         </svg>
                     </div>
                     <div
-                        class="cursor-pointer flex items-center justify-center w-11 h-11 bg-slate-100 rounded-full shadow-md ">
-                        <svg class=" scale-[85%] " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        class=" prev-next-btn cursor-pointer flex items-center justify-center w-11 h-11 bg-slate-200 lsx:scale-100 lax:scale mgx:scale-[80%]-msx:scale-[75%] 90 mgx:scale-[80%] msx:scale-75 max:scale-[73%] rounded-full shadow-sm hover:bg-[#029FAE] duration-500 ">
+                        <svg class="hover:stroke-white  " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             fill="none">
-                            <path stroke="#0d2022" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M15.5 7.5 20 12m0 0-4.5 4.5M20 12H4" />
+                            <path class=" stoke-[#0d2022]  " stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="1.5" d="M15.5 7.5 20 12m0 0-4.5 4.5M20 12H4" />
                         </svg>
                     </div>
                 </div>
@@ -268,86 +329,138 @@
 
 
         <!-- product slider -->
-        <div class=" w-full max-w-[1300px] flex items-center justify-evenly  bg-yellow-500/ mt-12 gap-x-5  mx-auto  ">
-            <div class=" relative  flex items-center justify-center basis-[12%]  opacity-30  ">
+        <div
+            class="sgx:hidden max:flex overflow-hidden w-full lsx:max-w-[1300px] lax:max-w-[90%] mgx:w-[90%] msx:w-[90%] max:w-[86%] items-center justify-evenly mgx:overflow-x-auto bg-yellow-500/ lax:mt-12 mgx:mt-8 msx:mt-6 max:mt-6 gap-x-5  mx-auto  ">
+            <div class=" relative lsx:hidden lax:flex msx:flex max:hidden items-center justify-center lsx:basis-1/4  msx:basis-1/5   ">
+                <img class=" max:rounded-xl msx:rounded-2xl w-full " src="/assets/images/Image (9).png" alt="slider-product">
+                <div
+                    class=" hidden mgx:block absolute bottom-0 opacity-75 bg-black  lsx:h-20 lax:h-16 rounded-b-2xl  w-full lsx:pl-7 lax:pl-5 mgx:pl-3 lsx:pt-2 lax:pt-1.5 ">
+                    <h4
+                        class=" text-white lsx:text-xl lax:text-base font-normal mgx:text-[15px] mgx:text-center mgx:py-2 lax:text-left lax:py-0 ">
+                        Wing Chair</h4>
+                    <p
+                        class=" text-slate-300 lsx:text-sm mgx:text-[13px] font-medium lsx:mt-2 lax:mt-1 mgx:hidden lax:block ">
+                        3,584 Products</p>
+                </div>
+            </div>
+            <div class=" relative hidden  lsx:flex items-center justify-center basis-[12%]  opacity-30  msx:basis-1/5 h-[220px] mt-10 ">
                 <img class=" rounded-2xl w-full h-[310px]  " src="/assets/images/Image (7).png" alt="slider-product">
-                <div class=" block absolute bottom-0 opacity-75 bg-black h-20 rounded-b-2xl  w-full pl-7 pt-2 ">
-                    <!-- <h4 class=" text-white text-xl font-normal ">Wing Chair</h4>
-                    <p class=" text-slate-300 text-sm font-medium mt-2 ">3,584 Products</p> -->
+                <div
+                    class=" hidden mgx:block absolute bottom-0 opacity-75 bg-black  lsx:h-20 lax:h-16 rounded-b-2xl  w-full lsx:pl-7 lax:pl-5 mgx:pl-3 lsx:pt-2 lax:pt-1.5 ">
+                    <!-- <h4 class=" text-white lsx:text-xl lax:text-base font-normal mgx:text-center mgx:py-2 lax:text-left mgx:py-0 ">Wing Chair</h4>
+                    <p class=" text-slate-300 text-lsx:sm font-medium lax:text-[13px] mt-lsx:2 ">3,584 Products</p> -->
                 </div>
                 <!-- <div class=" absolute inset-0 bg-gradient-to-l from-transparent to-white z-50 " ></div> -->
             </div>
-            <div class=" relative  flex items-center justify-center basis-1/4 ">
-                <img class=" rounded-2xl w-full " src="/assets/images/slider-product (1).png" alt="slider-product">
-                <div class=" block absolute bottom-0 opacity-75 bg-black h-20 rounded-b-2xl  w-full pl-7 pt-2 ">
-                    <h4 class=" text-white text-xl font-normal ">Wing Chair</h4>
-                    <p class=" text-slate-300 text-sm font-medium mt-2 ">3,584 Products</p>
+            <div class=" relative  flex items-center justify-center lsx:basis-1/4  msx:basis-1/5  ">
+                <img class=" max:rounded-xl msx:rounded-2xl w-full " src="/assets/images/slider-product (1).png" alt="slider-product">
+                <div
+                    class=" hidden mgx:block absolute bottom-0 opacity-75 bg-black  lsx:h-20 lax:h-16 rounded-b-2xl  w-full lsx:pl-7 lax:pl-5 mgx:pl-3 lsx:pt-2 lax:pt-1.5 ">
+                    <h4
+                        class=" text-white lsx:text-xl lax:text-base font-normal mgx:text-[15px] mgx:text-center mgx:py-2 lax:text-left lax:py-0 ">
+                        Wing Chair</h4>
+                    <p
+                        class=" text-slate-300 lsx:text-sm mgx:text-[13px] font-medium lsx:mt-2 lax:mt-1 mgx:hidden lax:block ">
+                        3,584 Products</p>
                 </div>
             </div>
-            <div class=" relative  flex items-center justify-center basis-1/4 ">
-                <img class=" rounded-2xl w-full " src="/assets/images/slider-product (2).png" alt="slider-product">
-                <div class=" block absolute bottom-0 opacity-75 bg-black h-20 rounded-b-2xl  w-full pl-7 pt-2 ">
-                    <h4 class=" text-white text-xl font-normal ">Wooden Chair</h4>
-                    <p class=" text-slate-300 text-sm font-medium mt-2 ">157 Products</p>
+            <div class=" relative  flex items-center justify-center lsx:basis-1/4  msx:basis-1/5  ">
+                <img class=" max:rounded-xl msx:rounded-2xl w-full " src="/assets/images/slider-product (2).png" alt="slider-product">
+                <div
+                    class=" hidden mgx:block absolute bottom-0 opacity-75 bg-black  lsx:h-20 lax:h-16 rounded-b-2xl  w-full lsx:pl-7 lax:pl-5 mgx:pl-3 lsx:pt-2 lax:pt-1.5 ">
+                    <h4
+                        class=" text-white lsx:text-xl lax:text-base font-normal mgx:text-[15px] mgx:text-center mgx:py-2 lax:text-left lax:py-0 ">
+                        Wing Chair</h4>
+                    <p
+                        class=" text-slate-300 lsx:text-sm mgx:text-[13px] font-medium lsx:mt-2 lax:mt-1 mgx:hidden lax:block ">
+                        3,584 Products</p>
                 </div>
             </div>
-            <div class=" relative  flex items-center justify-center basis-1/4 ">
-                <img class=" rounded-2xl w-full " src="/assets/images/slider-product (3).png" alt="slider-product">
-                <div class=" block absolute bottom-0 opacity-75 bg-black h-20 rounded-b-2xl  w-full pl-7 pt-2 ">
-                    <h4 class=" text-white text-xl font-normal ">Desk Chair</h4>
-                    <p class=" text-slate-300 text-sm font-medium mt-2 ">584 Products</p>
+            <div class=" relative  flex items-center justify-center lsx:basis-1/4  msx:basis-1/5  ">
+                <img class=" max:rounded-xl msx:rounded-2xl w-full " src="/assets/images/slider-product (3).png" alt="slider-product">
+                <div
+                    class=" hidden mgx:block absolute bottom-0 opacity-75 bg-black  lsx:h-20 lax:h-16 rounded-b-2xl  w-full lsx:pl-7 lax:pl-5 mgx:pl-3 lsx:pt-2 lax:pt-1.5 ">
+                    <h4
+                        class=" text-white lsx:text-xl lax:text-base font-normal mgx:text-[15px] mgx:text-center mgx:py-2 lax:text-left lax:py-0 ">
+                        Wing Chair</h4>
+                    <p
+                        class=" text-slate-300 lsx:text-sm mgx:text-[13px] font-medium lsx:mt-2 lax:mt-1 mgx:hidden lax:block ">
+                        3,584 Products</p>
                 </div>
             </div>
-            <div class=" relative  flex items-center justify-center basis-[12%] opacity-35 ">
+            <div class=" hidden  relative  lsx:flex items-center justify-center basis-[12%] opacity-35  msx:basis-1/5 h-[210px] mt-10  ">
                 <img class=" rounded-2xl w-full h-[310px] " src="/assets/images/Image (8).png" alt="slider-product">
-                <div class=" block absolute bottom-0 opacity-75 bg-black h-20 rounded-b-2xl  w-full pl-7 pt-2 ">
-                    <!-- <h4 class=" text-white text-xl font-normal ">Desk Chair</h4>
-                    <p class=" text-slate-300 text-sm font-medium mt-2 ">584 Products</p> -->
+                <div
+                    class=" hidden mgx:block absolute bottom-0 opacity-75 bg-black/75  lsx:h-20 lax:h-16 rounded-b-2xl  w-full lsx:pl-7 lax:pl-5 mgx:pl-3 lsx:pt-2 lax:pt-1.5 ">
+                    <!-- <h4 class=" text-white lsx:text-xl lax:text-base font-normal mgx:text-center mgx:py-2 lax:text-left mgx:py-0 ">Desk Chair</h4>
+                    <p class=" text-slate-300 text-lsx:sm font-medium lax:text-[13px] mt-lsx:2 ">584 Products</p> -->
                 </div>
                 <!-- <div class=" absolute inset-0 bg-gradient-to-r from-transparent to-white z-50 " ></div> -->
+            </div>
+            <div class=" relative lsx:hidden lax:flex msx:flex max:hidden items-center justify-center lsx:basis-1/4  msx:basis-1/5   ">
+                <img class=" rounded-2xl w-full  " src="/assets/images/Image (10).png" alt="slider-product">
+                <div
+                    class=" hidden mgx:block absolute bottom-0 opacity-75 bg-black  lsx:h-20 lax:h-16 rounded-b-2xl  w-full lsx:pl-7 lax:pl-5 mgx:pl-3 lsx:pt-2 lax:pt-1.5 ">
+                    <h4
+                        class=" text-white lsx:text-xl lax:text-base font-normal mgx:text-[15px] mgx:text-center mgx:py-2 lax:text-left lax:py-0 ">
+                        Wing Chair</h4>
+                    <p
+                        class=" text-slate-300 lsx:text-sm mgx:text-[13px] font-medium lsx:mt-2 lax:mt-1 mgx:hidden lax:block ">
+                        3,584 Products</p>
+                </div>
             </div>
         </div>
 
 
 
         <!-- products -->
-        <section class="mx-auto  flex justify-center items-center flex-col mt-16  ">
+        <section class="mx-auto  flex justify-center items-center flex-col lsx:mt-16 lax:mt-20 mgx:mt-16 msx:mt-14 max:mt-12 ">
             <!-- title and sort -->
             <div class=" flex items-center flex-col ">
-                <h2 class=" font-semibold text-slate-800 text-[33px] ">Our Products</h2>
-                <ul class=" flex items-center justify-evenly mt-5 ">
+                <h2 class=" font-semibold text-slate-800 lsx:text-[33px] lax:text-3xl mgx:text-[22px] msx:text-[20px] max:text-[18px] sgx:text-[17px] ">Our Products
+                </h2>
+                <ul class=" flex items-center justify-evenly  lgx:mt-7  lax:mt-5 mgx:mt-3 msx:mt-3 max:mt-3 sgx:mt-2 ">
                     <li
-                        class=" text-slate-400 mx-3 text-[15px] font-medium tracking-wide cursor-pointer border-b-2 border-white pb-1 hover:border-black duration-500 ">
+                        class=" text-slate-400 mgx:mx-3 max:mx-2 sgx:mx-1 lsx:text-base lax:text-sm mgx:text-[14px] msx:text-[13px] max:text-[12px] sgx:text-[12px] lax:font-medium lsx:font-medium tracking-wide cursor-pointer border-b-2 border-white pb-1 hover:border-black duration-500 ">
                         ALL</li>
                     <li
-                        class=" text-slate-400 mx-3 text-[15px] font-medium tracking-wide cursor-pointer border-b-2 border-white pb-1 hover:border-black duration-500 ">
+                        class=" text-slate-400 mgx:mx-3 max:mx-2 sgx:mx-1 lsx:text-base lax:text-sm mgx:text-[14px] msx:text-[13px] max:text-[12px] sgx:text-[12px] lax:font-medium lsx:font-medium tracking-wide cursor-pointer border-b-2 border-white pb-1 hover:border-black duration-500 ">
                         NEWEST</li>
                     <li
-                        class=" text-slate-400 mx-3 text-[15px] font-medium tracking-wide cursor-pointer border-b-2 border-white pb-1 hover:border-black duration-500 ">
+                        class=" text-slate-400 mgx:mx-3 max:mx-2 sgx:mx-1 lsx:text-base lax:text-sm mgx:text-[14px] msx:text-[13px] max:text-[12px] sgx:text-[12px] lax:font-medium lsx:font-medium tracking-wide cursor-pointer border-b-2 border-white pb-1 hover:border-black duration-500 ">
                         TRENDING</li>
                     <li
-                        class=" text-slate-400 mx-3 text-[15px] font-medium tracking-wide cursor-pointer border-b-2 border-white pb-1 hover:border-black duration-500 ">
+                        class=" text-slate-400 mgx:mx-3 max:mx-2 sgx:mx-1 lsx:text-base lax:text-sm mgx:text-[14px] msx:text-[13px] max:text-[12px] sgx:text-[12px] lax:font-medium lsx:font-medium tracking-wide cursor-pointer border-b-2 border-white pb-1 hover:border-black duration-500 ">
                         BEST SELLERS</li>
                     <li
-                        class=" text-slate-400 mx-3 text-[15px] font-medium tracking-wide cursor-pointer border-b-2 border-white pb-1 hover:border-black duration-500 ">
+                        class=" text-slate-400 mgx:mx-3 max:mx-2 sgx:mx-1 lsx:text-base lax:text-sm mgx:text-[14px] msx:text-[13px] max:text-[12px] sgx:text-[12px] lax:font-medium lsx:font-medium tracking-wide cursor-pointer border-b-2 border-white pb-1 hover:border-black duration-500 ">
                         FEATURED</li>
                 </ul>
             </div>
             <!-- products  -->
-            <div class=" grid grid-cols-4 w-full  bg-blue-600/ max-w-[1250px] mt-8 gap-x-6 gap-y-16 p-4 ">
+            <div
+                class=" grid msx:grid-cols-4 max:grid-cols-3 sgx:grid-cols-1 w-full  bg-blue-600/ lsx:max-w-[1250px] lax:max-w-[85%] mgx:max-w-[86%] msx:max-w-[94%] max:max-w-[95%] sgx:max-w-[98%] lsx:mt-16 lax:mt-10 mgx:mt-2 gap-x-6 lax:gap-y-12 mgx:gap-y-0 p-4 ">
                 <!-- shop product -->
                 <div
-                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex max:items-center sgx:items-center justify-center max:flex-col sgx:flex-row sgx:gap-x-4 lax:h-72 mgx:h-auto mgx:w-auto ">
+                    <!-- product label -->
+                    <span
+                        class=" sgx:hidden max:block font-medium mgx:p-1 msx:p-1 lsx:py-1.5 lsx:px-1.5 max:p-1 rounded-lg lsx:-top-3 lax:top-0 mgx:top-5 msx:top-3 max:top-3 msx:left-3 mgx:left-5 max:left-5 mgx:text-[12px] msx:text-[11px] max:text-[11px] lsx:text-[13px] text-white bg-green-600 absolute ">NEW</span>
                     <!-- product image -->
-                    <img class=" w-full " src="/assets/images/product-image (1).png" alt="product-image" srcset="">
+                    <img class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/product-image (1).png" alt="product-image" srcset="">
                     <!-- product info -->
-                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
+                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ max:mt-2 py-1 ">
                         <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
-                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
-                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
+                                Library Stool Chair</h5>
+                            <p
+                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
+                                $20
+                                <!-- <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span> -->
+                            </p>
                         </div>
-                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                        <button
+                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 sgx:-mt-4 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
                             <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -370,17 +483,25 @@
                 </div>
                 <!-- shop product -->
                 <div
-                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                  class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex max:items-center sgx:items-center justify-center max:flex-col sgx:flex-row sgx:gap-x-4 lax:h-72 mgx:h-auto mgx:w-auto ">
+                    <!-- product label -->
+                    <span
+                        class=" sgx:hidden max:block font-medium mgx:p-1 msx:p-1 lsx:py-1.5 lsx:px-1.5 max:p-1 rounded-lg lsx:-top-3 lax:top-0 mgx:top-5 msx:top-3 max:top-3 msx:left-3 mgx:left-5 max:left-5 mgx:text-[12px] msx:text-[11px] max:text-[11px] lsx:text-[13px] text-white bg-orange-600 absolute ">SALES</span>
                     <!-- product image -->
-                    <img class=" w-full " src="/assets/images/product-image (8).png" alt="product-image" srcset="">
+                    <img  class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/product-image (8).png" alt="product-image" srcset="">
                     <!-- product info -->
                     <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
                         <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
-                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
-                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
+                                Library Stool Chair</h5>
+                            <p
+                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
+                                $20
+                                <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span>
+                            </p>
                         </div>
-                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                        <button
+                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
                             <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -403,17 +524,22 @@
                 </div>
                 <!-- shop product -->
                 <div
-                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                  class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex max:items-center sgx:items-center justify-center max:flex-col sgx:flex-row sgx:gap-x-4 lax:h-72 mgx:h-auto mgx:w-auto ">
                     <!-- product image -->
-                    <img class=" w-full " src="/assets/images/product-image (7).png" alt="product-image" srcset="">
+                    <img  class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/product-image (7).png" alt="product-image" srcset="">
                     <!-- product info -->
                     <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
                         <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
-                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
-                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
+                                Library Stool Chair</h5>
+                            <p
+                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
+                                $20
+                                <!-- <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span> -->
+                            </p>
                         </div>
-                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                        <button
+                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
                             <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -436,17 +562,25 @@
                 </div>
                 <!-- shop product -->
                 <div
-                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                  class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex max:items-center sgx:items-center justify-center max:flex-col sgx:flex-row sgx:gap-x-4 lax:h-72 mgx:h-auto mgx:w-auto ">
+                    <!-- product label -->
+                    <span
+                        class=" sgx:hidden max:block font-medium mgx:p-1 msx:p-1 lsx:py-1.5 lsx:px-1.5 max:p-1 rounded-lg lsx:-top-3 lax:top-0 mgx:top-5 msx:top-3 max:top-3 msx:left-3 mgx:left-5 max:left-5 mgx:text-[12px] msx:text-[11px] max:text-[11px] lsx:text-[13px] text-white bg-green-600 absolute ">NEW</span>
                     <!-- product image -->
-                    <img class=" w-full " src="/assets/images/product-image (6).png" alt="product-image" srcset="">
+                    <img  class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/product-image (6).png" alt="product-image" srcset="">
                     <!-- product info -->
                     <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
                         <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
-                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
-                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
+                                Library Stool Chair</h5>
+                            <p
+                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
+                                $20
+                                <!-- <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span> -->
+                            </p>
                         </div>
-                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                        <button
+                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
                             <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -469,17 +603,25 @@
                 </div>
                 <!-- shop product -->
                 <div
-                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                  class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex max:items-center sgx:items-center justify-center max:flex-col sgx:flex-row sgx:gap-x-4 lax:h-72 mgx:h-auto mgx:w-auto ">
+                    <!-- product label -->
+                    <span
+                        class=" sgx:hidden max:block font-medium mgx:p-1 msx:p-1 lsx:py-1.5 lsx:px-1.5 max:p-1 rounded-lg lsx:-top-3 lax:top-0 mgx:top-5 msx:top-3 max:top-3 msx:left-3 mgx:left-5 max:left-5 mgx:text-[12px] msx:text-[11px] max:text-[11px] lsx:text-[13px] text-white bg-orange-600 absolute ">SALES</span>
                     <!-- product image -->
-                    <img class=" w-full " src="/assets/images/product-image (5).png" alt="product-image" srcset="">
+                    <img  class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/product-image (5).png" alt="product-image" srcset="">
                     <!-- product info -->
                     <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
                         <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
-                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
-                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
+                                Library Stool Chair</h5>
+                            <p
+                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
+                                $20
+                                <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span>
+                            </p>
                         </div>
-                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                        <button
+                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
                             <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -502,17 +644,22 @@
                 </div>
                 <!-- shop product -->
                 <div
-                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                  class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex max:items-center sgx:items-center justify-center max:flex-col sgx:flex-row sgx:gap-x-4 lax:h-72 mgx:h-auto mgx:w-auto ">
                     <!-- product image -->
-                    <img class=" w-full " src="/assets/images/product-image (4).png" alt="product-image" srcset="">
+                    <img  class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/product-image (4).png" alt="product-image" srcset="">
                     <!-- product info -->
                     <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
                         <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
-                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
-                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
+                                Library Stool Chair</h5>
+                            <p
+                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
+                                $20
+                                <!-- <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span> -->
+                            </p>
                         </div>
-                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                        <button
+                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
                             <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -535,17 +682,22 @@
                 </div>
                 <!-- shop product -->
                 <div
-                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                  class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex max:items-center sgx:items-center justify-center max:flex-col sgx:flex-row sgx:gap-x-4 lax:h-72 mgx:h-auto mgx:w-auto ">
                     <!-- product image -->
-                    <img class=" w-full " src="/assets/images/product-image (3).png" alt="product-image" srcset="">
+                    <img  class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/product-image (3).png" alt="product-image" srcset="">
                     <!-- product info -->
                     <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
                         <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
-                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
-                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
+                                Library Stool Chair</h5>
+                            <p
+                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
+                                $20
+                                <!-- <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span> -->
+                            </p>
                         </div>
-                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                        <button
+                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
                             <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -568,17 +720,22 @@
                 </div>
                 <!-- shop product -->
                 <div
-                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                  class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex max:items-center sgx:items-center justify-center max:flex-col sgx:flex-row sgx:gap-x-4 lax:h-72 mgx:h-auto mgx:w-auto ">
                     <!-- product image -->
-                    <img class=" w-full " src="/assets/images/slider-product (2).png" alt="product-image" srcset="">
+                    <img  class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/slider-product (2).png" alt="product-image" srcset="">
                     <!-- product info -->
                     <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
                         <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
-                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
-                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
+                                Library Stool Chair</h5>
+                            <p
+                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
+                                $20
+                                <!-- <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span> -->
+                            </p>
                         </div>
-                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                        <button
+                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
                             <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -604,21 +761,23 @@
 
 
         <!-- Users Opinion -->
-        <section class=" w-full py-20 bg-[#e7e9ea] mt-20  ">
+        <section class=" w-full lgx:py-20 lsx:py-16 lax:py-12 mgx:py-5 msx:py-5 sgx:py-4 bg-[#e7e9ea] lax:mt-20 mgx:mt-10  ">
             <!-- title -->
-            <div class=" flex items-center justify-between max-w-[1220px] mx-auto ">
-                <h2 class=" font-semibold text-[33px] text-slate-800  "> What Client Says About Us </h2>
-                <div class=" flex items-center justify-between w-[100px] ">
+            <div
+                class=" flex items-center sgx:justify-center sgg:justify-between lsx:max-w-[1220px] lax:max-w-[86%] mgx:max-w-[84%] msx:max-w-[90%] sgx:max-w-[88%] mx-auto lax:mt-0 mgx:mt-4  ">
+                <h2 class=" font-semibold lsx:text-[33px] lax:text-[25px] mgx:text-[20px] msx:text-[20px] max:text-[18px] sgx:text-[17px] text-slate-800  "> What Client
+                    Says About Us </h2>
+                <div class=" sgx:hidden sgg:flex items-center justify-between lax:w-[100px] mgx:w-[90px] msx:w-[90px] sgx:max-w-[88%] ">
                     <div
-                        class="  prev-next-btn cursor-pointer flex items-center justify-center w-11 h-11 bg-slate-100 rounded-full shadow-md hover:bg-[#029FAE] duration-300 ">
-                        <svg class="hover:stroke-white " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        class="  prev-next-btn cursor-pointer flex items-center justify-center w-11 h-11 bg-white lsx:scale-100 lax:scale-90 mgx:scale-[80%] msx:scale-[75%] max:scale-[73%] sgx:scale-[68%] rounded-full msx:scale-75-full shadow-sm hover:bg-[#029FAE] duration-500 ">
+                        <svg class="hover:stroke-white  " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             fill="none">
                             <path class=" stoke-[#0d2022]  " stroke="currentColor" stroke-linecap="round"
                                 stroke-linejoin="round" stroke-width="1.5" d="M8.5 7.5 4 12m0 0 4.5 4.5M4 12h16" />
                         </svg>
                     </div>
                     <div
-                        class=" prev-next-btn cursor-pointer flex items-center justify-center w-11 h-11 bg-slate-100 rounded-full shadow-md hover:bg-[#029FAE] duration-300 ">
+                        class=" prev-next-btn cursor-pointer flex items-center justify-center w-11 h-11 bg-white lsx:scale-100 lax:scale-90 mgx:scale-[80%] msx:scale-[75%] max:scale-[73%] sgx:scale-[68%] rounded-full msx:scale-75-full shadow-sm hover:bg-[#029FAE] duration-500 ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
                             <path class=" stoke-[#0d2022]  " stroke="currentColor" stroke-linecap="round"
                                 stroke-linejoin="round" stroke-width="1.5" d="M15.5 7.5 20 12m0 0-4.5 4.5M20 12H4" />
@@ -627,27 +786,35 @@
                 </div>
             </div>
             <!-- opinions -->
-            <div class=" flex items-center justify-between w-full max-w-[1200px] mx-auto bg-sky-400/ mt-12 my-5 ">
-                <div class=" flex justify-center items-start flex-col w-full p-7 bg-white rounded-xl mx-3 shadow-md  ">
+            <div
+                class=" flex items-center justify-between max:flex-row sgx:flex-col sgx:gap-y-5 w-full lsx:max-w-[1200px] lax:max-w-[86%] mgx:max-w-[84%] msx:max-w-[90%] sgx:max-w-[92%] mx-auto bg-sky-400/ lax:mt-12 mgx:mt-8 my-5 ">
+                <div class=" flex justify-center items-start flex-col w-full mgx:p-7 sgx:p-4 bg-white rounded-xl mx-3 shadow-sm max:w-[330px] sgx:w-[90%] h-auto msx:w-full  ">
                     <!-- text -->
-                    <p class=" text-[#9a97a7] text-lg font-medium capitalize border-l-2 pl-4 border-[#11A5B3] ">“Lorem
+                    <p
+                        class=" text-[#9a97a7] lsx:text-lg lax:text-base msx:text-sm sgx:text-[12.5px] mgx:font-normal capitalize border-l-2 pl-4 border-[#11A5B3] ">
+                        “Lorem
                         ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt
-                        blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at
-                        ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod
-                        sit amet suscipit et“</p>
+                        blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui 
+                        <span class=" hidden mgx:inline " > at
+                            ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod
+                            sit amet suscipit et“</span>
+                    </p>
                     <!-- user info -->
-                    <div class=" flex items-center justify-between w-full bg-indigo-700/ mt-5 ">
+                    <div class=" flex items-center justify-between w-full bg-indigo-700/ lsx:mt-5 lax:mt-2">
                         <!-- info -->
                         <div class=" flex justify-center items-center  ">
-                            <img src="/assets/images/profile (1).png" alt="profile">
-                            <div class=" flex items-start justify-center flex-col ml-4 ">
-                                <h6 class=" text-xl font-semibold text-slate-800 ">Kristin Watson</h6>
-                                <p class=" text-[#a9aab2] mt-1  ">Fasion Designer</p>
+                            <img class=" sgx:scale-[62%] msx:scale-[70%] mgx:scale-75 lax:scale-75 lsx:scale-100 " src="/assets/images/profile (1).png"
+                                alt="profile">
+                            <div class=" flex items-start justify-center flex-col lax:ml-4 mgx:ml-1 ">
+                                <h6 class=" lsx:text-xl lax:text-lg font-semibold mgx:text-base msx:text-[15px] sgx:text-sm text-slate-800 ">Kristin
+                                    Watson</h6>
+                                <p class=" text-[#a9aab2] lax:mt-1 lsx:text-base lax:text-[15px] msx:text-[14px] sgx:text-[13px] ">
+                                    Fasion Designer</p>
                             </div>
                         </div>
                         <!-- qoute logo -->
-                        <svg class=" " width="97" height="76" viewBox="0 0 97 76" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg class="sgx:hidden msx:block lsx:scale-100 lax:scale-75 mgx:scale-[70%] msx:scale-[62%] sgx:scale-50 " width="97" height="76"
+                            viewBox="0 0 97 76" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M18.8001 37.2824C8.15751 37.2824 0.958344 29.8659 0.958344 18.877C0.958344 8.98829 9.21701 0.75 20.4029 0.75C32.6551 0.75 41.7083 10.6387 41.7083 25.7433C41.7083 60.0752 16.6743 73.808 0.958344 75.4583V60.3537C11.6145 58.4316 23.595 47.7212 24.1315 35.9037C23.595 36.1753 21.4692 37.2824 18.8001 37.2824Z"
                                 fill="#F0F2F3" />
@@ -657,25 +824,33 @@
                         </svg>
                     </div>
                 </div>
-                <div class=" flex justify-center items-start flex-col w-full p-7 bg-white rounded-xl mx-3 shadow-md  ">
+                <div class=" flex justify-center items-start flex-col w-full mgx:p-7 sgx:p-4 bg-white rounded-xl mx-3 shadow-sm max:w-[330px] sgx:w-[90%] h-auto msx:w-full  ">
                     <!-- text -->
-                    <p class=" text-[#9a97a7] text-lg font-medium capitalize border-l-2 pl-4 border-[#11A5B3] ">“Lorem
+                    <p
+                        class=" text-[#9a97a7] lsx:text-lg lax:text-base msx:text-sm sgx:text-[12.5px] mgx:font-normal capitalize border-l-2 pl-4 border-[#11A5B3] ">
+                        “Lorem
                         ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt
-                        blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at
-                        ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod
-                        sit amet suscipit et“</p>
+                        blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui 
+                        <span class=" hidden mgx:inline " > at
+                            ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod
+                            sit amet suscipit et“</span>
+                    </p>
                     <!-- user info -->
-                    <div class=" flex items-center justify-between w-full bg-indigo-700/ mt-5 ">
+                    <div class=" flex items-center justify-between w-full bg-indigo-700/ lsx:mt-5 lax:mt-2">
                         <!-- info -->
                         <div class=" flex justify-center items-center  ">
-                            <img src="/assets/images/profile (2).png" alt="profile">
-                            <div class=" flex items-start justify-center flex-col ml-4 ">
-                                <h6 class=" text-xl font-semibold text-slate-800 ">Esther Howard</h6>
-                                <p class=" text-[#a9aab2] mt-1  ">Fasion Designer</p>
+                            <img class=" sgx:scale-[62%] msx:scale-[70%] mgx:scale-75 lax:scale-75 lsx:scale-100 " src="/assets/images/profile (2).png"
+                                alt="profile">
+                            <div class=" flex items-start justify-center flex-col lax:ml-4 mgx:ml-1 ">
+                                <h6 class=" lsx:text-xl lax:text-lg font-semibold mgx:text-base msx:text-[15px] sgx:text-sm text-slate-800 ">Esther
+                                    Howard</h6>
+                                <p class=" text-[#a9aab2] lax:mt-1 lsx:text-base lax:text-[15px] msx:text-[14px] sgx:text-[13px] ">
+                                    Fasion Designer</p>
                             </div>
                         </div>
                         <!-- qoute logo -->
-                        <svg width="97" height="76" viewBox="0 0 97 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="sgx:hidden msx:block lsx:scale-100 lax:scale-75  mgx:scale-[70%] msx:scale-[62%] sgx:scale-50 " width="97" height="76"
+                            viewBox="0 0 97 76" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M18.8001 37.2824C8.15751 37.2824 0.958344 29.8659 0.958344 18.877C0.958344 8.98829 9.21701 0.75 20.4029 0.75C32.6551 0.75 41.7083 10.6387 41.7083 25.7433C41.7083 60.0752 16.6743 73.808 0.958344 75.4583V60.3537C11.6145 58.4316 23.595 47.7212 24.1315 35.9037C23.595 36.1753 21.4692 37.2824 18.8001 37.2824Z"
                                 fill="#F0F2F3" />
@@ -690,21 +865,23 @@
 
 
         <!-- Recently Added -->
-        <section class=" w-full py-8 bg-sky-300/ my-[58px] flex items-center justify-center flex-col  ">
+        <section
+            class="sgx:hidden max:flex  w-full lsx:py-8 lax:py-4 bg-sky-300/ lsx:my-[58px] lax:my-5 mgx:my-3 msx:my-3 items-center justify-center flex-col  ">
             <!-- title -->
-            <div class=" flex items-center justify-between max-w-[1230px] mx-auto w-full ">
-                <h2 class=" font-semibold text-[30px] text-slate-800  "> Recently Added </h2>
-                <div class=" flex items-center justify-between w-[100px] ">
+            <div
+                class=" flex items-center justify-between lsx:max-w-[1230px] lax:max-w-[85%] mgx:max-w-[84%] msx:max-w-[90%] max:max-w-[90%] mx-auto w-full lax:mt-0 mgx:mt-5 msx:mt-4 max:mt-4 ">
+                <h2 class=" font-semibold lsx:text-[30px] lax:text-2xl mgx:text-[20px] msx:text-[20px] max:text-[18px] text-slate-800  "> Recently Added </h2>
+                <div class=" flex items-center lax:justify-between mgx:justify-evenly w-[100px] ">
                     <div
-                        class="  prev-next-btn cursor-pointer flex items-center justify-center w-11 h-11 bg-slate-100 rounded-full shadow-md hover:bg-[#029FAE] duration-300 ">
-                        <svg class="hover:stroke-white " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        class="   prev-next-btn cursor-pointer flex items-center justify-center w-11 h-11 bg-slate-200 lsx:scale-100 lax:scale mgx:scale-[80%]-msx:scale-[75%] 90 mgx:scale-[80%] msx:scale-75 max:scale-[73%] rounded-full shadow-md hover:bg-[#029FAE] duration-300 ">
+                        <svg class="hover:stroke-white  " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             fill="none">
                             <path class=" stoke-[#0d2022]  " stroke="currentColor" stroke-linecap="round"
                                 stroke-linejoin="round" stroke-width="1.5" d="M8.5 7.5 4 12m0 0 4.5 4.5M4 12h16" />
                         </svg>
                     </div>
                     <div
-                        class=" prev-next-btn cursor-pointer flex items-center justify-center w-11 h-11 bg-slate-100 rounded-full shadow-md hover:bg-[#029FAE] duration-300 ">
+                        class="  prev-next-btn cursor-pointer flex items-center justify-center w-11 h-11 bg-slate-200 lsx:scale-100 lax:scale mgx:scale-[80%]-msx:scale-[75%] 90 mgx:scale-[80%] msx:scale-75 max:scale-[73%] rounded-full shadow-md hover:bg-[#029FAE] duration-300 ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
                             <path class=" stoke-[#0d2022]  " stroke="currentColor" stroke-linecap="round"
                                 stroke-linejoin="round" stroke-width="1.5" d="M15.5 7.5 20 12m0 0-4.5 4.5M20 12H4" />
@@ -713,26 +890,32 @@
                 </div>
             </div>
             <!-- products  -->
-            <div class=" grid grid-cols-4 w-full  bg-blue-600/ max-w-[1250px] mt-14 gap-x-6 gap-y-16 p-4 ">
+            <div
+                class=" grid msx:grid-cols-4 max:grid-cols-3 w-full  bg-blue-600/ lsx:max-w-[1250px] lax:max-w-[85%] mgx:max-w-[84%] msx:max-w-[90%] max:max-w-[90%] mgx:mt-6 max:mt-4 msx:mt-4  lsx:mt-16 lax:mt-14  gap-x-6  lsx:p-4 lax:p-1 ">
                 <!-- shop product -->
                 <div
-                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                    class=" max:hidden msx:flex mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col lax:h-72 mgx:h-auto mgx:w-auto">
                     <!-- product image -->
-                    <img class=" w-full " src="/assets/images/product-image (1).png" alt="product-image" srcset="">
+                    <img  class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/product-image (1).png" alt="product-image" srcset="">
                     <!-- product info -->
                     <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
                         <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
-                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
-                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
+                                Library Stool Chair</h5>
+                            <p
+                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
+                                $20
+                                <!-- <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span> -->
+                            </p>
                         </div>
-                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                        <button
+                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
                             <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
                                     stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
+                                    stroke0linejoin="round" />
                                 <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
                                     stroke-linecap="round" stroke-linejoin="round" />
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -749,23 +932,28 @@
                 </div>
                 <!-- shop product -->
                 <div
-                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                  class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex max:items-center sgx:items-center justify-center max:flex-col sgx:flex-row sgx:gap-x-4 lax:h-72 mgx:h-auto mgx:w-auto ">
                     <!-- product image -->
-                    <img class=" w-full " src="/assets/images/product-image (8).png" alt="product-image" srcset="">
+                    <img  class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/product-image (8).png" alt="product-image" srcset="">
                     <!-- product info -->
                     <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
                         <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
-                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
-                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
+                                Library Stool Chair</h5>
+                            <p
+                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
+                                $20
+                                <!-- <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span> -->
+                            </p>
                         </div>
-                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                        <button
+                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
                             <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
                                     stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
+                                    stroke0linejoin="round" />
                                 <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
                                     stroke-linecap="round" stroke-linejoin="round" />
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -782,23 +970,28 @@
                 </div>
                 <!-- shop product -->
                 <div
-                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                  class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex max:items-center sgx:items-center justify-center max:flex-col sgx:flex-row sgx:gap-x-4 lax:h-72 mgx:h-auto mgx:w-auto ">
                     <!-- product image -->
-                    <img class=" w-full " src="/assets/images/product-image (7).png" alt="product-image" srcset="">
+                    <img  class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/product-image (7).png" alt="product-image" srcset="">
                     <!-- product info -->
                     <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
                         <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
-                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
-                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
+                                Library Stool Chair</h5>
+                            <p
+                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
+                                $20
+                                <!-- <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span> -->
+                            </p>
                         </div>
-                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                        <button
+                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
                             <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
                                     stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
+                                    stroke0linejoin="round" />
                                 <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
                                     stroke-linecap="round" stroke-linejoin="round" />
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -815,23 +1008,28 @@
                 </div>
                 <!-- shop product -->
                 <div
-                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col h-72 ">
+                  class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex max:items-center sgx:items-center justify-center max:flex-col sgx:flex-row sgx:gap-x-4 lax:h-72 mgx:h-auto mgx:w-auto ">
                     <!-- product image -->
-                    <img class=" w-full " src="/assets/images/product-image (6).png" alt="product-image" srcset="">
+                    <img  class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/product-image (6).png" alt="product-image" srcset="">
                     <!-- product info -->
                     <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
                         <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 ">Library Stool Chair</h5>
-                            <p class=" font-semibold text-[17px] text-slate-700 mt-1 ">$20 <span
-                                    class=" font-medium line-through  text-sm text-slate-400 ">30$</span> </p>
+                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
+                                Library Stool Chair</h5>
+                            <p
+                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
+                                $20
+                                <!-- <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span> -->
+                            </p>
                         </div>
-                        <button class=" p-2 bg-slate-200/85 hover:bg-[#029FAE] duration-500 rounded-xl  ">
+                        <button
+                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
                             <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
                                     stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
+                                    stroke0linejoin="round" />
                                 <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
                                     stroke-linecap="round" stroke-linejoin="round" />
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -853,21 +1051,23 @@
         <hr>
 
 
-        <footer class=" w-full py-14 mx-auto bg-sky-100/ mt-5 flex items-start justify-between max-w-[1240px]  mb-10 ">
+        <footer
+            class=" w-full mgx:py-14 msx:py-7 mx-auto bg-sky-100/ mt-5 flex items-start max:justify-around sgx:flex-col sgx:gap-y-12 sgx:pl-4 max:gap-0 max:flex-row msx:justify-between lsx:max-w-[1240px] lax:max-w-[88%] sgx:max-w-[92%]  ">
             <!-- logo and social links -->
-            <div class=" flex items-start justify-center flex-col gap-y-5 bg-red-500/ ">
+            <div class=" flex items-start justify-center flex-col gap-y-5 bg-red-500/  msx:w-48 mgx:w-auto ">
                 <div class=" flex items-center justify-center gap-x-3 bg-red-400/ ">
-                    <img src="/assets/images/logo.png " alt="logo">
-                    <h1 class=" text-2xl font-semibold text-[#272343] ">Comforty</h1>
+                    <img class=" lsx:scale-100 lax:scale-75 " src="/assets/images/logo.png " alt="logo">
+                    <h1 class=" lsx:text-2xl lax:text-xl font-semibold text-[#272343] ">Comforty</h1>
                 </div>
-                <p class=" w-full block text-[#7D7B8E] ">
+                <p class="lsx:text-base lax:text-sm mgx:text-sm sgx:text-[13px] w-full block lax:max-w-full mgx:max-w-60 text-[#7D7B8E] ">
                     Vivamus tristique odio sit amet velit semper, <br>
                     eu posuere turpis interdum. <br>
                     Cras egestas purus
                 </p>
-                <div class=" w-60 flex items-center justify-between pl-2 ">
+                <div class=" lsx:w-60 lax:w-44 flex items-center justify-between pl-2 lax:gap-x-0 mgx:gap-x-3 sgx:gap-x-2 ">
                     <!-- facebook -->
-                    <svg  class=" w-5 h-5 " viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class=" sgx:scale-75 mgx:scale-[80%] lax:scale-90 lsx:scale-100 w-5 h-5 " viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1_1875)">
                             <path
                                 d="M16 8C16 3.58167 12.4183 0 8 0C3.58167 0 0 3.58167 0 8C0 11.993 2.92533 15.3027 6.75 15.9027V10.3127H4.71867V8H6.75V6.23733C6.75 4.23267 7.94433 3.125 9.77167 3.125C10.6467 3.125 11.5623 3.28133 11.5623 3.28133V5.25H10.5537C9.56 5.25 9.25 5.86667 9.25 6.5V8H11.4687L11.114 10.3127H9.25V15.9027C13.0747 15.3027 16 11.9927 16 8Z"
@@ -880,7 +1080,8 @@
                         </defs>
                     </svg>
                     <!-- twitter -->
-                    <svg  class=" w-5 h-5 " viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class=" sgx:scale-75 mgx:scale-[80%] lax:scale-90 lsx:scale-100 w-5 h-5 " viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1_1879)">
                             <path
                                 d="M5.03333 14.5C11.07 14.5 14.3723 9.49801 14.3723 5.16134C14.3723 5.02067 14.369 4.87701 14.3627 4.73634C15.0052 4.27167 15.5596 3.69609 16 3.03667C15.4017 3.30267 14.7667 3.47667 14.116 3.55201C14.8008 3.14153 15.3136 2.49669 15.5593 1.73701C14.915 2.1189 14.2104 2.38831 13.4757 2.53367C12.9807 2.00745 12.3261 1.65898 11.6132 1.54216C10.9002 1.42534 10.1687 1.54667 9.53161 1.8874C8.89456 2.22812 8.38752 2.76925 8.08891 3.42709C7.79031 4.08493 7.71677 4.82284 7.87967 5.52667C6.575 5.46121 5.29865 5.1223 4.13336 4.53193C2.96806 3.94156 1.93984 3.1129 1.11533 2.09967C0.696305 2.82217 0.568091 3.67711 0.756747 4.49074C0.945403 5.30437 1.43677 6.01564 2.131 6.48001C1.60977 6.46349 1.09995 6.32318 0.643667 6.07067V6.11134C0.643231 6.8695 0.905349 7.60442 1.38547 8.19119C1.86559 8.77796 2.53409 9.18036 3.27733 9.33001C2.79463 9.46209 2.28801 9.48137 1.79667 9.38634C2.00644 10.0383 2.41454 10.6086 2.964 11.0175C3.51346 11.4264 4.17688 11.6536 4.86167 11.6673C4.18054 12.2025 3.40049 12.598 2.56623 12.8312C1.73197 13.0643 0.859899 13.1305 0 13.026C1.50191 13.9894 3.24899 14.501 5.03333 14.5Z"
@@ -893,7 +1094,8 @@
                         </defs>
                     </svg>
                     <!-- instagram -->
-                    <svg  class=" w-5 h-5 " viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class=" sgx:scale-75 mgx:scale-[80%] lax:scale-90 lsx:scale-100 w-5 h-5 " viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M10.6667 4.66667C10.6667 4.48986 10.7369 4.32029 10.8619 4.19526C10.987 4.07024 11.1565 4 11.3334 4C11.5102 4 11.6797 4.07024 11.8048 4.19526C11.9298 4.32029 12 4.48986 12 4.66667C12 4.84348 11.9298 5.01305 11.8048 5.13807C11.6797 5.2631 11.5102 5.33333 11.3334 5.33333C11.1565 5.33333 10.987 5.2631 10.8619 5.13807C10.7369 5.01305 10.6667 4.84348 10.6667 4.66667Z"
                             fill="#636270" />
@@ -905,7 +1107,8 @@
                             fill="#636270" />
                     </svg>
                     <!-- pinterest -->
-                    <svg  class=" w-5 h-5 " viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class=" sgx:scale-75 mgx:scale-[80%] lax:scale-90 lsx:scale-100 w-5 h-5 " viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1_1893)">
                             <path
                                 d="M8 0C3.58133 0 0 3.58133 0 8C0 11.3907 2.10933 14.2843 5.08433 15.45C5.01567 14.8157 4.95 13.8467 5.11267 13.1563C5.25933 12.5313 6.05 9.18133 6.05 9.18133C6.05 9.18133 5.80933 8.703 5.80933 7.99367C5.80933 6.88133 6.453 6.05 7.256 6.05C7.93733 6.05 8.26867 6.56267 8.26867 7.178C8.26867 7.86566 7.83133 8.89066 7.60633 9.84066C7.41867 10.6373 8.00633 11.2873 8.79067 11.2873C10.2123 11.2873 11.3063 9.78733 11.3063 7.625C11.3063 5.70933 9.93133 4.36867 7.96567 4.36867C5.69067 4.36867 4.353 6.075 4.353 7.84066C4.353 8.528 4.61867 9.26566 4.95 9.66566C5.01567 9.74366 5.025 9.81566 5.00633 9.89366C4.947 10.147 4.80967 10.6903 4.78433 10.8C4.75 10.9467 4.66867 10.978 4.51567 10.9063C3.51567 10.4407 2.89067 8.98133 2.89067 7.80633C2.89067 5.28133 4.725 2.96567 8.175 2.96567C10.95 2.96567 13.1063 4.94367 13.1063 7.58733C13.1063 10.344 11.3687 12.5623 8.95633 12.5623C8.147 12.5623 7.38433 12.1407 7.122 11.6437C7.122 11.6437 6.722 13.172 6.625 13.547C6.44367 14.2403 5.95633 15.1127 5.63133 15.6437C6.3986 15.8804 7.19706 16.0005 8 16C12.4187 16 16 12.4187 16 8C16 3.58133 12.4187 0 8 0Z"
@@ -918,7 +1121,8 @@
                         </defs>
                     </svg>
                     <!-- youtube -->
-                    <svg  class=" w-5 h-5 " viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class=" sgx:scale-75 mgx:scale-[80%] lax:scale-90 lsx:scale-100 w-5 h-5 " viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M15.8407 4.79995C15.8407 4.79995 15.6843 3.69661 15.203 3.21261C14.5937 2.57495 13.9123 2.57195 13.6 2.53428C11.3627 2.37195 8.00333 2.37195 8.00333 2.37195H7.99667C7.99667 2.37195 4.63767 2.37195 2.4 2.53428C2.08733 2.57195 1.40633 2.57495 0.796667 3.21261C0.316 3.69661 0.162667 4.79995 0.162667 4.79995C0.162667 4.79995 0 6.09662 0 7.39062V8.60295C0 9.89695 0.159333 11.1936 0.159333 11.1936C0.159333 11.1936 0.315667 12.2969 0.793667 12.7813C1.403 13.4186 2.203 13.3969 2.55933 13.4656C3.84067 13.5876 8 13.6249 8 13.6249C8 13.6249 11.3623 13.6186 13.6 13.4593C13.9127 13.4219 14.5937 13.4186 15.2033 12.7813C15.6843 12.2969 15.8407 11.1936 15.8407 11.1936C15.8407 11.1936 16 9.90028 16 8.60328V7.39095C16 6.09728 15.8407 4.80028 15.8407 4.80028V4.79995ZM6.34667 10.0749V5.57828L10.6683 7.83428L6.34667 10.0749Z"
                             fill="#636270" />
@@ -926,42 +1130,196 @@
                 </div>
             </div>
             <!-- category -->
-             <div class=" flex items-start justify-center flex-col bg-yellow-100/ gap-y-2 " >
-                <h4 class=" font-medium text-[#9A9CAA] text-[15px] " >CATEGORY</h4>
-                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Sofa</h5>
-                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Armchair</h5>
-                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Wing Chair</h5>
-                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Desk Chair</h5>
-                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Wooden Chair</h5>
-                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Park Bench</h5>
-             </div>
+            <div class=" sgx:hidden msx:flex items-start justify-center flex-col bg-yellow-100/ gap-y-2 ">
+                <h4 class=" font-medium text-[#9A9CAA] lsx:text-[15px]  msx:text-[13.5px]  ">CATEGORY</h4>
+                <h5
+                    class=" font-medium text-stone-800 lsx:text-[15px] mgx:text-[13.5px] msx:text-[13px] cursor-pointer hover:underline hover:text-[#029FAE] ">
+                    Sofa</h5>
+                <h5
+                    class=" font-medium text-stone-800 lsx:text-[15px] mgx:text-[13.5px] msx:text-[13px] cursor-pointer hover:underline hover:text-[#029FAE] ">
+                    Armchair</h5>
+                <h5
+                    class=" font-medium text-stone-800 lsx:text-[15px] mgx:text-[13.5px] msx:text-[13px] cursor-pointer hover:underline hover:text-[#029FAE] ">
+                    Wing Chair</h5>
+                <h5
+                    class=" font-medium text-stone-800 lsx:text-[15px] mgx:text-[13.5px] msx:text-[13px] cursor-pointer hover:underline hover:text-[#029FAE] ">
+                    Desk Chair</h5>
+                <h5
+                    class=" font-medium text-stone-800 lsx:text-[15px] mgx:text-[13.5px] msx:text-[13px] cursor-pointer hover:underline hover:text-[#029FAE] ">
+                    Wooden Chair</h5>
+                <h5
+                    class=" font-medium text-stone-800 lsx:text-[15px] mgx:text-[13.5px] msx:text-[13px] cursor-pointer hover:underline hover:text-[#029FAE] ">
+                    Park Bench</h5>
+            </div>
             <!-- support -->
-            <div class=" flex items-start justify-center flex-col bg-yellow-100/ gap-y-2 " >
-                <h4 class=" font-medium text-[#9A9CAA] text-[15px] " >SUPPORT</h4>
-                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Help & Support</h5>
-                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Terms & Conditions</h5>
-                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Privacy Policy</h5>
-                <h5 class=" font-medium text-stone-800 text-[14px] cursor-pointer hover:underline hover:text-[#029FAE] " >Help</h5>
-             </div>
-             <!-- Newsletter -->
-              <div class=" flex items-start justify-center flex-col bg-yellow-100/ gap-y-2 " >
-                <h4 class=" font-medium text-[#9A9CAA] text-[15px" >NEWSLETTER</h4>
+            <div class=" sgx:hidden msx:flex items-start justify-center flex-col bg-yellow-100/ gap-y-2 ">
+                <h4 class=" font-medium text-[#9A9CAA] lsx:text-[15px]  msx:text-[13.5px]  ">SUPPORT</h4>
+                <h5
+                    class=" font-medium text-stone-800 lsx:text-[15px] mgx:text-[13.5px] msx:text-[13px] cursor-pointer hover:underline hover:text-[#029FAE] ">
+                    Help & Support</h5>
+                <h5
+                    class=" font-medium text-stone-800 lsx:text-[15px] mgx:text-[13.5px] msx:text-[13px] cursor-pointer hover:underline hover:text-[#029FAE] ">
+                    Terms & Conditions</h5>
+                <h5
+                    class=" font-medium text-stone-800 lsx:text-[15px] mgx:text-[13.5px] msx:text-[13px] cursor-pointer hover:underline hover:text-[#029FAE] ">
+                    Privacy Policy</h5>
+                <h5
+                    class=" font-medium text-stone-800 lsx:text-[15px] mgx:text-[13.5px] msx:text-[13px] cursor-pointer hover:underline hover:text-[#029FAE] ">
+                    Help</h5>
+            </div>
+            <!-- Newsletter -->
+            <div class=" flex items-start justify-center flex-col bg-yellow-100/ gap-y-2 msx:w-[225px] sgx:w-[250px] mgx:w-auto ">
+                <h4 class=" font-medium text-[#9A9CAA] lsx:text-[15px]  sgx:text-[13.5px]  ">NEWSLETTER</h4>
                 <!-- email grabber -->
-                <div class=" flex items-center justify-between  w-full bg-indigo-100/ gap-x-3 mt-4  " >
-                    <div class=" flex items-center justify-center  border-[1px] border-stone-200 rounded-lg w-64 " >
-                        <input class=" w-full py-2.5 px-6 outline-none border-none bg-transparent   " placeholder="Your Email..." type=" text">
+                <div class=" flex items-center justify-between  w-full bg-indigo-100/ gap-x-3 mt-4  ">
+                    <div
+                        class=" flex items-center justify-center  border-[1px] border-stone-200 rounded-lg lsx:w-64 lax:w-[280px] mgx:w-[240px] ">
+                        <input
+                            class="  lsx:text-base mgx:text-[14.5px] sgx:text-[14px] tracking-wide w-full lsx:py-2.5 mgx:py-2 sgx:py-1.5 lsx:px-6 mgx:px-5 sgx:px-3 outline-none border-none bg-transparent   "
+                            placeholder="Your Email..." type=" text">
                     </div>
-                    <button class=" font-medium text-white bg-[#029FAE] rounded-lg px-6 py-2.5 tracking-wide " >Subscribe</button>
+                    <button
+                        class=" font-medium text-white bg-[#029FAE] rounded-lg lsx:px-6 lsx:py-2.5 lax:px-4 lax:py-2 mgx:px-3 sgx:px-2.5 mgx:py-2 sgx:py-1.5 lsx:text-base lax:text-sm mgx:text-sm sgx:text-[13px] tracking-wide ">Subscribe</button>
                 </div>
-                <p class=" text-[#b3b4b8] mt-4 " >
+                <p class="lsx:text-base mgx:text-sm sgx:text-[13px] text-[#b3b4b8] mt-4 ">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-                     Nullam tincidunt erat enim.
+                    Nullam tincidunt erat enim.
                 </p>
-              </div>
+            </div>
         </footer>
 
 
+        <!-- designer info -->
+        <section class=" max:mt-4 sgx:mt-7 msx:mt-0 mx-auto max-w-[1250px] lax:max-w-[93%] max:max-w-[94%]  w-full py-4 bg-sky-100/  flex items-center sgx:justify-center max:justify-between ">
+            <p class=" capitalize font-medium lsx:text-base mgx:text-sm max:text-[14px] sgx:text-[13px] text-[#8D8F9C]  ">@ 2021 - Blogy - Designed &
+                Develop by <span class=" text-stone-700 ">Zakirsoft</span></p>
+            <div class=" sgx:hidden  max:flex items-center justify-between lax:w-1/5 msx:gap-x-3 lax:gap-x-0 grayscale opacity-55 ">
+                <svg class=" lsx:scale-100 lax:scale-90 mgx:scale-[80%] msx:scale-[75%] max:scale-[70%] " width="36" height="23" viewBox="0 0 36 23" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M35.6525 18.3935V17.9615H35.54L35.4099 18.258L35.2805 17.9615H35.1676V18.3935H35.2475V18.0681L35.3692 18.3489H35.452L35.5737 18.0674V18.3935H35.6529H35.6525ZM34.9389 18.3935V18.0355H35.0829V17.9626H34.715V18.0355H34.859V18.3935H34.9382H34.9389Z"
+                        fill="#F79410" />
+                    <path d="M22.8674 20.2465H13.1331V2.75269H22.8676L22.8674 20.2465Z" fill="#FF5F00" />
+                    <path
+                        d="M13.7503 11.4999C13.7503 7.95133 15.4118 4.79021 17.9992 2.75304C16.0407 1.20874 13.6183 0.370594 11.1242 0.37428C4.98034 0.37428 0 5.35534 0 11.4999C0 17.6446 4.98034 22.6256 11.1242 22.6256C13.6184 22.6293 16.0408 21.7912 17.9994 20.2469C15.4122 18.2101 13.7503 15.0487 13.7503 11.4999Z"
+                        fill="#EB001B" />
+                    <path
+                        d="M36 11.4999C36 17.6446 31.0197 22.6256 24.8758 22.6256C22.3813 22.6293 19.9586 21.7911 17.9997 20.2469C20.5878 18.2097 22.2494 15.0487 22.2494 11.4999C22.2494 7.95115 20.5878 4.79021 17.9997 2.75304C19.9586 1.20879 22.3812 0.370659 24.8756 0.374279C31.0195 0.374279 35.9998 5.35534 35.9998 11.4999"
+                        fill="#F79E1B" />
+                </svg>
+                <svg class=" lsx:scale-100 lax:scale-90 mgx:scale-[80%] msx:scale-[75%] max:scale-[70%]" width="56" height="15" viewBox="0 0 56 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6.71983 0.0395509H2.36407C2.21987 0.0394599 2.08038 0.0908718 1.97073 0.184523C1.86108 0.278174 1.78848 0.407907 1.76602 0.550345L0.00435239 11.7197C-0.00374653 11.7715 -0.00051583 11.8245 0.0138205 11.8749C0.0281568 11.9254 0.0532584 11.9721 0.0873979 12.012C0.121538 12.0518 0.163903 12.0838 0.211579 12.1056C0.259254 12.1275 0.311105 12.1388 0.363564 12.1387H2.44304C2.58734 12.1388 2.7269 12.0873 2.83657 11.9935C2.94623 11.8998 3.01877 11.7699 3.04109 11.6273L3.51622 8.61478C3.53853 8.47233 3.61098 8.34254 3.72051 8.24877C3.83004 8.155 3.96945 8.10343 4.11363 8.10335H5.49252C8.36176 8.10335 10.0177 6.7149 10.4502 3.96349C10.6451 2.75975 10.4584 1.81396 9.89478 1.15158C9.27571 0.424239 8.1777 0.0395509 6.71983 0.0395509ZM7.22235 4.1189C6.98415 5.68185 5.78996 5.68185 4.63526 5.68185H3.97797L4.43909 2.76294C4.45259 2.67754 4.49612 2.59977 4.56186 2.54361C4.62759 2.48745 4.71121 2.45659 4.79767 2.45659H5.09892C5.88549 2.45659 6.62748 2.45659 7.01089 2.90497C7.23954 3.17246 7.3096 3.56989 7.22235 4.1189ZM19.74 4.06858H17.6541C17.5677 4.06858 17.4841 4.09944 17.4183 4.1556C17.3526 4.21176 17.3091 4.28954 17.2956 4.37493L17.2032 4.95833L17.0574 4.74688C16.6058 4.09151 15.5989 3.87242 14.5938 3.87242C12.2889 3.87242 10.3202 5.61816 9.93682 8.06705C9.73747 9.28862 10.0209 10.4567 10.7138 11.2713C11.3495 12.0203 12.259 12.3324 13.341 12.3324C15.1982 12.3324 16.2281 11.1382 16.2281 11.1382L16.1351 11.7178C16.1268 11.7696 16.1299 11.8226 16.1441 11.8731C16.1582 11.9236 16.1832 11.9705 16.2172 12.0104C16.2512 12.0504 16.2935 12.0825 16.3411 12.1045C16.3888 12.1266 16.4406 12.138 16.4931 12.1381H18.3719C18.5162 12.1382 18.6558 12.0867 18.7654 11.9929C18.8751 11.8991 18.9476 11.7692 18.97 11.6267L20.0973 4.48766C20.1056 4.43596 20.1026 4.38307 20.0884 4.33265C20.0743 4.28223 20.0494 4.23548 20.0154 4.19564C19.9814 4.15579 19.9392 4.12379 19.8916 4.10186C19.8441 4.07992 19.7924 4.06857 19.74 4.06858ZM16.8325 8.12819C16.6313 9.31983 15.6855 10.1198 14.4792 10.1198C13.8735 10.1198 13.3895 9.92552 13.0786 9.55739C12.7704 9.19181 12.6532 8.67146 12.7513 8.09188C12.9392 6.91043 13.9009 6.08437 15.0887 6.08437C15.681 6.08437 16.1625 6.28118 16.4797 6.65249C16.7975 7.02762 16.9236 7.55116 16.8325 8.12819ZM30.8488 4.06858H28.7528C28.6539 4.06874 28.5566 4.09301 28.4692 4.13929C28.3819 4.18557 28.3072 4.25247 28.2515 4.33417L25.3606 8.59249L24.1352 4.5004C24.0976 4.37559 24.0208 4.26621 23.9162 4.18844C23.8116 4.11067 23.6847 4.06865 23.5544 4.06858H21.4946C21.4368 4.06843 21.3798 4.08209 21.3283 4.10842C21.2769 4.13475 21.2324 4.173 21.1987 4.21998C21.165 4.26695 21.143 4.3213 21.1346 4.3785C21.1261 4.43569 21.1314 4.49408 21.1501 4.54881L23.4588 11.3242L21.2883 14.3883C21.2497 14.4426 21.2268 14.5065 21.2222 14.573C21.2175 14.6394 21.2312 14.7059 21.2618 14.7651C21.2924 14.8243 21.3386 14.8739 21.3956 14.9086C21.4525 14.9432 21.5178 14.9615 21.5845 14.9615H23.6779C23.7757 14.9616 23.872 14.9381 23.9586 14.8928C24.0453 14.8475 24.1196 14.7819 24.1754 14.7016L31.1469 4.63861C31.1847 4.58417 31.2068 4.52042 31.211 4.45428C31.2151 4.38813 31.201 4.32212 31.1703 4.26339C31.1396 4.20467 31.0934 4.15547 31.0368 4.12113C30.9801 4.08679 30.9151 4.06861 30.8488 4.06858Z"
+                        fill="#253B80" />
+                    <path
+                        d="M37.7885 0.039089H33.4321C33.288 0.0391498 33.1487 0.0906302 33.0391 0.184268C32.9296 0.277905 32.8571 0.407553 32.8347 0.549883L31.073 11.7192C31.0648 11.7709 31.0679 11.8238 31.0822 11.8743C31.0964 11.9247 31.1214 11.9714 31.1554 12.0113C31.1894 12.0511 31.2316 12.0831 31.2792 12.105C31.3268 12.1269 31.3786 12.1383 31.4309 12.1383H33.6665C33.7673 12.1381 33.8648 12.102 33.9414 12.0364C34.018 11.9708 34.0686 11.88 34.0843 11.7803L34.5842 8.61432C34.6065 8.47187 34.679 8.34207 34.7885 8.24831C34.8981 8.15454 35.0375 8.10297 35.1816 8.10289H36.5599C39.4298 8.10289 41.0851 6.71444 41.5182 3.96303C41.7137 2.75929 41.5258 1.81349 40.9622 1.15112C40.3437 0.423777 39.2463 0.039089 37.7885 0.039089ZM38.291 4.11844C38.0534 5.68139 36.8592 5.68139 35.7039 5.68139H35.0473L35.509 2.76248C35.5223 2.67708 35.5656 2.59924 35.6313 2.54304C35.6969 2.48685 35.7805 2.45602 35.867 2.45613H36.1682C36.9541 2.45613 37.6968 2.45613 38.0802 2.9045C38.3088 3.172 38.3783 3.56943 38.291 4.11844ZM50.808 4.06812H48.7234C48.637 4.06788 48.5533 4.09867 48.4876 4.15489C48.4219 4.2111 48.3786 4.28902 48.3655 4.37447L48.2731 4.95787L48.1266 4.74642C47.6751 4.09105 46.6688 3.87196 45.6638 3.87196C43.3588 3.87196 41.3908 5.6177 41.0074 8.06658C40.8087 9.28816 41.0908 10.4562 41.7838 11.2708C42.4207 12.0198 43.3289 12.3319 44.411 12.3319C46.2682 12.3319 47.298 11.1377 47.298 11.1377L47.2051 11.7173C47.1968 11.7692 47.1998 11.8223 47.2141 11.8729C47.2283 11.9236 47.2534 11.9705 47.2875 12.0105C47.3217 12.0504 47.3641 12.0825 47.4119 12.1045C47.4597 12.1264 47.5117 12.1378 47.5643 12.1377H49.4425C49.5867 12.1376 49.7261 12.086 49.8356 11.9922C49.9451 11.8985 50.0176 11.7687 50.0399 11.6262L51.1678 4.4872C51.1758 4.43534 51.1725 4.38235 51.1581 4.33189C51.1437 4.28143 51.1185 4.23469 51.0843 4.19488C51.0501 4.15506 51.0077 4.12312 50.96 4.10124C50.9123 4.07936 50.8605 4.06806 50.808 4.06812ZM47.9006 8.12772C47.7006 9.31936 46.7535 10.1193 45.5472 10.1193C44.9428 10.1193 44.4575 9.92506 44.1467 9.55693C43.8384 9.19135 43.7225 8.671 43.8193 8.09142C44.0084 6.90997 44.9689 6.08391 46.1567 6.08391C46.749 6.08391 47.2305 6.28071 47.5477 6.65203C47.8668 7.02716 47.9929 7.55069 47.9006 8.12772ZM53.2671 0.345438L51.4793 11.7192C51.4711 11.7709 51.4742 11.8238 51.4884 11.8743C51.5027 11.9247 51.5276 11.9714 51.5617 12.0113C51.5957 12.0511 51.6379 12.0831 51.6855 12.105C51.7331 12.1269 51.7848 12.1383 51.8372 12.1383H53.6346C53.9333 12.1383 54.1868 11.9217 54.2326 11.6269L55.9956 0.458169C56.0037 0.406398 56.0006 0.353469 55.9864 0.30302C55.9722 0.25257 55.9472 0.205798 55.9132 0.165917C55.8792 0.126036 55.8369 0.0939924 55.7894 0.0719892C55.7418 0.0499859 55.69 0.0385449 55.6376 0.0384521H53.625C53.5386 0.0387581 53.4551 0.0698188 53.3895 0.12607C53.324 0.182322 53.2805 0.260088 53.2671 0.345438Z"
+                        fill="#179BD7" />
+                </svg>
+                <svg class=" lsx:scale-100 lax:scale-90 mgx:scale-[80%] msx:scale-[75%] max:scale-[70%]" width="50" height="27" viewBox="0 0 50 27" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M50 20.094C50 21.3506 49.209 21.9363 47.7933 21.9363H45.0878V20.6797H47.7933C48.0432 20.6797 48.2514 20.6381 48.335 20.5546C48.418 20.4705 48.5013 20.3448 48.5013 20.1775C48.5013 20.0096 48.4183 19.8423 48.335 19.7589C48.2514 19.6748 48.0851 19.6332 47.8353 19.6332C46.5451 19.591 44.9212 19.6748 44.9212 17.8322C44.9212 16.9943 45.4623 16.0728 46.9193 16.0728H49.7085V17.3294H47.1273C46.878 17.3294 46.7111 17.3294 46.5862 17.4129C46.4612 17.5386 46.3782 17.6643 46.3782 17.8738C46.3782 18.0833 46.5032 18.209 46.6694 18.2931C46.8363 18.3347 47.0029 18.3766 47.2112 18.3766H47.9602C48.7512 18.3766 49.251 18.5438 49.5841 18.8374C49.8334 19.1304 50 19.5078 50 20.094ZM44.1299 18.8374C43.7967 18.5438 43.2969 18.3766 42.5059 18.3766H41.7569C41.549 18.3766 41.3821 18.3344 41.2158 18.2931C41.0489 18.209 40.9246 18.0833 40.9246 17.8738C40.9246 17.6643 40.9659 17.5386 41.1325 17.4129C41.2574 17.3294 41.4237 17.3294 41.6736 17.3294H44.2548V16.0728H41.4657C39.9667 16.0728 39.4669 16.9943 39.4669 17.8322C39.4669 19.6745 41.0909 19.591 42.3816 19.6332C42.6309 19.6332 42.7978 19.6748 42.8808 19.7589C42.9638 19.8423 43.0477 20.0096 43.0477 20.1775C43.0477 20.3448 42.9641 20.4705 42.8808 20.5546C42.7558 20.6381 42.5895 20.6797 42.3397 20.6797H39.6335V21.9363H42.3397C43.7548 21.9363 44.546 21.3503 44.546 20.094C44.546 19.5078 44.3798 19.1304 44.1299 18.8374ZM38.8009 20.7222H35.5126V19.5494H38.7179V18.3772H35.5126V17.2878H38.8009V16.0734H34.1385V21.9366H38.8009V20.7222ZM32.6395 16.3667C32.1814 16.1153 31.6403 16.0731 30.9326 16.0731H27.7273V21.9363H29.1424V19.8004H30.6414C31.1405 19.8004 31.4324 19.8426 31.6406 20.0518C31.8905 20.3448 31.8905 20.8476 31.8905 21.2246V21.9363H33.2639V20.8054C33.2639 20.261 33.2226 20.0096 33.056 19.7167C32.931 19.5488 32.6818 19.3396 32.3486 19.2139C32.7228 19.0888 33.3478 18.586 33.3478 17.6643C33.3475 16.9946 33.0976 16.6175 32.6395 16.3667ZM24.7296 16.0731H20.2749L18.4847 17.9998L16.7777 16.0731H11.1575V21.9363H16.6947L18.485 20.0096L20.1919 21.9363H22.898V19.9683H24.6466C25.8538 19.9683 27.0615 19.6332 27.0615 17.9998C27.0612 16.4083 25.8121 16.0731 24.7296 16.0731ZM31.5154 18.5026C31.3074 18.586 31.0992 18.586 30.8493 18.586L29.1424 18.6282V17.2875H30.8493C31.0992 17.2875 31.3491 17.2875 31.5154 17.4132C31.6822 17.4973 31.8066 17.6646 31.8066 17.916C31.8066 18.1674 31.6822 18.3769 31.5154 18.5026ZM24.7296 18.7955H22.8977V17.2875H24.7296C25.2294 17.2875 25.5622 17.4973 25.5622 17.9998C25.5622 18.5026 25.2291 18.7955 24.7296 18.7955ZM19.3589 19.0047L21.5237 16.7016V21.4341L19.3589 19.0047ZM15.9867 20.7222H12.5312V19.5494H15.6119V18.3772H12.5312V17.2878H16.0284L17.5687 19.005L15.9867 20.7222ZM46.128 11.8431H44.1299L41.507 7.44542V11.8431H38.6765L38.1348 10.5446H35.2207L34.6796 11.8431H33.0557C32.3896 11.8431 31.5154 11.6755 31.0162 11.1727C30.5581 10.6703 30.3082 10.0002 30.3082 8.9531C30.3082 8.07357 30.4331 7.27783 31.0572 6.64968C31.4734 6.18881 32.223 5.97963 33.1803 5.97963H34.5124V7.23624H33.1803C32.6812 7.23624 32.3893 7.32003 32.0981 7.57141C31.8482 7.82279 31.7233 8.28335 31.7233 8.9115C31.7233 9.53965 31.8482 10.0005 32.0981 10.2938C32.306 10.503 32.6812 10.5868 33.0554 10.5868H33.6801L35.6782 5.97994H37.76L40.0913 11.5082V5.97963H42.2564L44.7126 10.0421V5.97963H46.1277V11.8431H46.128ZM29.6005 5.97963H28.1854V11.8431H29.6005V5.97963ZM26.6445 6.23102C26.1863 5.97963 25.6872 5.97963 24.9795 5.97963H21.7736V11.8431H23.1473V9.70694H24.646C25.1458 9.70694 25.4789 9.74884 25.6869 9.95832C25.9368 10.2516 25.8948 10.7544 25.8948 11.0892V11.8431H27.3099V10.6703C27.3099 10.1678 27.2686 9.91642 27.0606 9.62315C26.9357 9.45556 26.6858 9.24607 26.3946 9.12069C26.7688 8.9531 27.3938 8.49254 27.3938 7.57111C27.3941 6.90106 27.1023 6.52399 26.6445 6.23102ZM20.7743 10.6287H17.5271V9.45586H20.7327V8.24146H17.5271V7.19434H20.7743V5.97994H16.1117V11.8434H20.7743V10.6287ZM15.0708 5.97963H12.7811L11.0742 9.95832L9.24232 5.97963H6.99429V11.5079L4.62131 5.97963H2.53987L0.0419488 11.8431H1.54064L2.08175 10.5446H4.99584L5.53695 11.8431H8.36804V7.23624L10.4078 11.8431H11.615L13.6551 7.23624V11.8431H15.0705V5.97963H15.0708ZM37.6357 9.28827L36.6778 6.98486L35.7205 9.28827H37.6357ZM25.5622 8.36715C25.3543 8.49284 25.1461 8.49284 24.8545 8.49284H23.1473V7.19464H24.8542C25.1041 7.19464 25.395 7.19464 25.5619 7.27844C25.7282 7.40413 25.8118 7.57172 25.8118 7.82279C25.8118 8.07387 25.7285 8.28305 25.5622 8.36715ZM2.58121 9.28827L3.53879 6.98486L4.49637 9.28827H2.58121ZM49.6671 0H0V8.70202L1.70693 4.80713H5.32871L5.82847 5.77045V4.80713H10.075L11.0325 6.90106L11.9485 4.80713H25.4789C26.103 4.80713 26.6442 4.93282 27.0609 5.26769V4.80713H30.766V5.26769C31.3901 4.93251 32.1811 4.80713 33.0973 4.80713H38.4677L38.9675 5.77045V4.80713H42.9224L43.5055 5.77045V4.80713H47.3768V13.0159H43.4638L42.7148 11.7596V13.0159H37.8436L37.3025 11.6758H36.0947L35.5536 13.0159H33.0143C32.0151 13.0159 31.2655 12.7645 30.7663 12.5134V13.0159H24.7296V11.1311C24.7296 10.8797 24.688 10.8379 24.5214 10.8379H24.3134V13.0156H12.6562V11.9685L12.24 13.0156H9.78374L9.36757 12.0104V13.0156H4.66296L4.1635 11.6755H2.95604L2.41493 13.0156H0V27H49.6671V22.732C49.126 22.9834 48.3764 23.1091 47.627 23.1091H44.0049V22.6063C43.5888 22.9418 42.8391 23.1091 42.1317 23.1091H30.7244V21.2246C30.7244 20.9733 30.683 20.9733 30.4745 20.9733H30.2665V23.1091H26.5195V20.8895C25.8954 21.1824 25.1874 21.1824 24.563 21.1824H24.1465V23.1091H19.5672L18.485 21.8525L17.2778 23.1091H9.90838V14.9006H17.4021L18.4847 16.1566L19.6505 14.9006H24.688C25.2704 14.9006 26.2283 14.9841 26.6445 15.4028V14.9006H31.1405C31.5986 14.9006 32.4732 14.9841 33.0557 15.4028V14.9006H39.8417V15.4031C40.2166 15.0679 40.9246 14.9009 41.5487 14.9009H45.337V15.4031C45.7538 15.1101 46.3363 14.9009 47.0859 14.9009H49.6671V0Z"
+                        fill="#9A9CAA" />
+                </svg>
+                <svg class=" lsx:scale-100 lax:scale-90 mgx:scale-[80%] msx:scale-[75%] max:scale-[70%]" width="55" height="19" viewBox="0 0 55 19" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M19.3551 18.1241H23.843L26.6483 0.886384H22.16L19.3551 18.1241ZM11.3011 12.7426L15.5796 0.886384H20.4097L13.2695 18.1246H8.59352L4.69446 3.14854C2.16302 1.62829 0 1.17826 0 1.17826L0.000125848 1.17782C4.20006e-05 1.1778 0 1.17779 0 1.17779L0.0829981 0.885915H7.15627C9.10257 0.885915 9.28517 2.43798 9.28517 2.43798L10.7953 10.19C10.7953 10.19 10.7952 10.1898 10.795 10.1893L10.7953 10.1905L10.7948 10.1895L11.3011 12.7426ZM55 18.1241H50.8792L50.3535 15.5637H44.6483L43.7127 18.1241H39.0344L45.7277 2.17055C45.7277 2.17055 46.1335 0.885923 47.7995 0.885923H51.4071L55 18.1241ZM48.2988 5.57577L45.9408 12.0266H49.6254L48.2988 5.57577ZM40.0258 1.32996L39.3853 5.03167C37.4648 3.97345 33.0941 3.72307 33.0936 5.67214C33.0936 6.44645 34.0825 6.97896 35.2745 7.62079C37.0821 8.59417 39.3567 9.81898 39.3567 12.5199C39.3567 16.8358 34.7365 18.4216 31.6739 18.4216C28.6122 18.4216 26.6082 17.4482 26.6082 17.4482L27.2754 13.5777C29.1129 15.0528 34.6807 15.4719 34.6807 13.1327C34.6807 12.1498 33.5847 11.5701 32.3137 10.898C30.56 9.97051 28.4734 8.86694 28.4734 6.28494C28.4734 1.55175 33.7622 0.578369 35.9893 0.578369C38.0495 0.578369 40.0258 1.32996 40.0258 1.32996Z"
+                        fill="#E6A540" />
+                </svg>
+            </div>
+        </section>
+
+
     </div>
+
+
+    <!-- products cart modal -->
+    <div
+        class=" hidden  items-center justify-start flex-col fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[500px] z-50 bg-white rounded-xl  ">
+        <h2 class=" mt-7 font-semibold text-[24px] tracking-wide ">SHOP CART</h2>
+        <span class=" w-[90%] mx-auto h-[2px] bg-stone-200 mt-4 rounded-full shadow-md "></span>
+        <!-- cart product -->
+        <div class=" flex items-center justify-between w-full bg-blue-100/ mt-5 py-3 px-4 ">
+            <!-- info -->
+            <img class=" w-1/4 rounded-lg " src="/assets/images/product-image (1).png" alt="" srcset="">
+            <div class=" -ml-8 flex flex-col items-start justify-center ">
+                <h4 class=" text-lg font-semibold text-black ">Library Stool Chair</h4>
+                <div class="  bg-black/  flex justify-center items-center gap-x-1 mt-3  ">
+                    <a
+                        class=" font-medium p-1.5 flex items-center justify-center cursor-pointer  bg-[#242424]  rounded-xl mx-2 ">
+                        <svg width="12" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13 8H8V13C8 13.55 7.55 14 7 14C6.45 14 6 13.55 6 13V8H1C0.45 8 0 7.55 0 7C0 6.45 0.45 6 1 6H6V1C6 0.45 6.45 0 7 0C7.55 0 8 0.45 8 1V6H13C13.55 6 14 6.45 14 7C14 7.55 13.55 8 13 8Z"
+                                fill="#fff" />
+                        </svg>
+                    </a>
+                    <p class=" font-medium text-[19px] p-1 text-black  rounded-md ">4</p>
+                    <a
+                        class=" font-medium p-1.5 flex items-center justify-center cursor-pointer bg-[#242424]  rounded-xl mx-2 ">
+                        <svg width="12" height="12" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="2" rx="1" fill="#fff" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class=" flex flex-col items-end pr-2 justify-center gap-y-6 ">
+                <p class="  font-semibold  lsx:text-[17px] lax:text-[16px] text-slate-950 ">$ 20.00</p>
+                <svg class=" cursor-pointer " width="22" height="22" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 6H5H21" stroke="#E23A2E" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z"
+                        stroke="#E23A2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+        <!-- cart product -->
+        <div class=" flex items-center justify-between w-full bg-blue-100/  py-3 px-4 ">
+            <!-- info -->
+            <img class=" w-1/4 rounded-lg " src="/assets/images/product-image (5).png" alt="" srcset="">
+            <div class=" -ml-8 flex flex-col items-start justify-center ">
+                <h4 class=" text-lg font-semibold text-black ">Library Stool Chair</h4>
+                <div class="  bg-black/  flex justify-center items-center gap-x-1 mt-3  ">
+                    <a
+                        class=" font-medium p-1.5 flex items-center justify-center cursor-pointer  bg-[#242424]  rounded-xl mx-2 ">
+                        <svg width="12" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13 8H8V13C8 13.55 7.55 14 7 14C6.45 14 6 13.55 6 13V8H1C0.45 8 0 7.55 0 7C0 6.45 0.45 6 1 6H6V1C6 0.45 6.45 0 7 0C7.55 0 8 0.45 8 1V6H13C13.55 6 14 6.45 14 7C14 7.55 13.55 8 13 8Z"
+                                fill="#fff" />
+                        </svg>
+                    </a>
+                    <p class=" font-medium text-[19px] p-1 text-black  rounded-md ">4</p>
+                    <a
+                        class=" font-medium p-1.5 flex items-center justify-center cursor-pointer bg-[#242424]  rounded-xl mx-2 ">
+                        <svg width="12" height="12" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="14" height="2" rx="1" fill="#fff" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class=" flex flex-col items-end pr-2 justify-center gap-y-6 ">
+                <p class="  font-semibold  lsx:text-[17px] lax:text-[16px] text-slate-950 ">$ 20.00</p>
+                <svg class=" cursor-pointer " width="22" height="22" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 6H5H21" stroke="#E23A2E" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z"
+                        stroke="#E23A2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- blur on modal on  -->
+    <div class="hidden absolute inset-0 bg-slate-900/55 backdrop-blur-sm w-full  z-40  "></div>
+
+
+
 </body>
 
 </html>
