@@ -67,7 +67,7 @@
                         <!-- search input -->
                         <div class=" sgx:hidden max:flex  items-center justify-between  bg-white lax:p-3 mgx:p-2.5 msx:py-2.5 msx:px-3 sgx:px-2.5 sgx:py-2 rounded-lg shadow-sm basis-1/4 ">
                             <input class=" w-full outline-none border-none lax:h-5 mgx:h-4 mx-1 mgx:text-base msx:text-sm sgx:text sgx:text-[13.5px] " type="text" name="search"
-                                id="search" placeholder="Search here...">
+                                id="search-input" placeholder="Search here...">
                             <svg class=" mgx:mx-1 msx:mx-0 sgx:mx-0 cursor-pointer " xmlns="http://www.w3.org/2000/svg" width="23" height="22"
                                 fill="none">
                                 <path stroke="#272343" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -76,7 +76,7 @@
                         </div>
                         <!-- hyper links -->
                         <div class=" flex items-center justify-center  gap-x-3 ">
-                            <a class=" relative flex items-center justify-evenly mgx:gap-x-4 msx:gap-x-2  sgx:gap-x-2 bg-white mgx:p-3 msx:p-2 sgx:p-2 rounded-lg "
+                            <a id="cart-btn" class=" relative flex items-center justify-evenly mgx:gap-x-4 msx:gap-x-2  sgx:gap-x-2 bg-white mgx:p-3 msx:p-2 sgx:p-2 rounded-lg "
                                 href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
                                     <path stroke="#272343" stroke-linecap="round" stroke-linejoin="round"
@@ -88,8 +88,8 @@
                                         clip-rule="evenodd" />
                                 </svg>
                                 <span class=" text-[#272343] font-medium ">cart</span>
-                                <span id="product-counter"
-                                    class=" w-5 h-5 text-[12px] rounded-full bg-[#007580] text-slate-200 font-medium flex items-center justify-center  ">2</span>
+                                <span id="productsQuantity"
+                                    class=" w-5 h-5 text-[12px] rounded-full bg-[#007580] text-slate-200 font-medium flex items-center justify-center  "></span>
                             </a>
                             <a class=" hidden mgx:block bg-white p-3 rounded-lg " href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
@@ -146,7 +146,7 @@
                         </ul>
                     </nav>
                     <!-- cantact info -->
-                    <p class=" sgx:hidden mxf:inline-block  font-medium lax:text-base mgx:text-[15px] msx:text-[14.5px] sgx:text-[14px] text-[#888795]  ">
+                    <p class=" hidden sm:inline  font-medium lax:text-base mgx:text-[15px] msx:text-[14.5px] sgx:text-[14px] text-[#888795]  ">
                         Contact:
                         <span class="text-[#151227] ">(808) 555-0111</span>
                     </p>
@@ -439,323 +439,8 @@
             </div>
             <!-- products  -->
             <div
-                class=" grid msx:grid-cols-4 max:grid-cols-3 sgx:grid-cols-1 w-full  bg-blue-600/ lsx:max-w-[1250px] lax:max-w-[85%] mgx:max-w-[86%] msx:max-w-[94%] max:max-w-[95%] sgx:max-w-[98%] lsx:mt-16 lax:mt-10 mgx:mt-2 gap-x-6 lax:gap-y-12 mgx:gap-y-0 p-4 ">
-                <!-- shop product -->
-                <div
-                    class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex max:items-center sgx:items-center justify-center max:flex-col sgx:flex-row sgx:gap-x-4 lax:h-72 mgx:h-auto mgx:w-auto ">
-                    <!-- product label -->
-                    <span
-                        class=" sgx:hidden max:block font-medium mgx:p-1 msx:p-1 lsx:py-1.5 lsx:px-1.5 max:p-1 rounded-lg lsx:-top-3 lax:top-0 mgx:top-5 msx:top-3 max:top-3 msx:left-3 mgx:left-5 max:left-5 mgx:text-[12px] msx:text-[11px] max:text-[11px] lsx:text-[13px] text-white bg-green-600 absolute ">NEW</span>
-                    <!-- product image -->
-                    <img class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/product-image (1).png" alt="product-image" srcset="">
-                    <!-- product info -->
-                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ max:mt-2 py-1 ">
-                        <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
-                                Library Stool Chair</h5>
-                            <p
-                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
-                                $20
-                                <!-- <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span> -->
-                            </p>
-                        </div>
-                        <button
-                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 sgx:-mt-4 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
-                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
-                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
-                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
-                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <!-- shop product -->
-                <div
-                  class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex max:items-center sgx:items-center justify-center max:flex-col sgx:flex-row sgx:gap-x-4 lax:h-72 mgx:h-auto mgx:w-auto ">
-                    <!-- product label -->
-                    <span
-                        class=" sgx:hidden max:block font-medium mgx:p-1 msx:p-1 lsx:py-1.5 lsx:px-1.5 max:p-1 rounded-lg lsx:-top-3 lax:top-0 mgx:top-5 msx:top-3 max:top-3 msx:left-3 mgx:left-5 max:left-5 mgx:text-[12px] msx:text-[11px] max:text-[11px] lsx:text-[13px] text-white bg-orange-600 absolute ">SALES</span>
-                    <!-- product image -->
-                    <img  class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/product-image (2).png" alt="product-image" srcset="">
-                    <!-- product info -->
-                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
-                        <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
-                                Library Stool Chair</h5>
-                            <p
-                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
-                                $20
-                                <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span>
-                            </p>
-                        </div>
-                        <button
-                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
-                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
-                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
-                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
-                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <!-- shop product -->
-                <div
-                  class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex max:items-center sgx:items-center justify-center max:flex-col sgx:flex-row sgx:gap-x-4 lax:h-72 mgx:h-auto mgx:w-auto ">
-                    <!-- product image -->
-                    <img  class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/product-image (3).png" alt="product-image" srcset="">
-                    <!-- product info -->
-                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
-                        <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
-                                Library Stool Chair</h5>
-                            <p
-                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
-                                $20
-                                <!-- <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span> -->
-                            </p>
-                        </div>
-                        <button
-                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
-                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
-                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
-                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
-                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <!-- shop product -->
-                <div
-                  class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex max:items-center sgx:items-center justify-center max:flex-col sgx:flex-row sgx:gap-x-4 lax:h-72 mgx:h-auto mgx:w-auto ">
-                    <!-- product label -->
-                    <span
-                        class=" sgx:hidden max:block font-medium mgx:p-1 msx:p-1 lsx:py-1.5 lsx:px-1.5 max:p-1 rounded-lg lsx:-top-3 lax:top-0 mgx:top-5 msx:top-3 max:top-3 msx:left-3 mgx:left-5 max:left-5 mgx:text-[12px] msx:text-[11px] max:text-[11px] lsx:text-[13px] text-white bg-green-600 absolute ">NEW</span>
-                    <!-- product image -->
-                    <img  class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/product-image (6).png" alt="product-image" srcset="">
-                    <!-- product info -->
-                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
-                        <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
-                                Library Stool Chair</h5>
-                            <p
-                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
-                                $20
-                                <!-- <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span> -->
-                            </p>
-                        </div>
-                        <button
-                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
-                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
-                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
-                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
-                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <!-- shop product -->
-                <div
-                  class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex max:items-center sgx:items-center justify-center max:flex-col sgx:flex-row sgx:gap-x-4 lax:h-72 mgx:h-auto mgx:w-auto ">
-                    <!-- product label -->
-                    <span
-                        class=" sgx:hidden max:block font-medium mgx:p-1 msx:p-1 lsx:py-1.5 lsx:px-1.5 max:p-1 rounded-lg lsx:-top-3 lax:top-0 mgx:top-5 msx:top-3 max:top-3 msx:left-3 mgx:left-5 max:left-5 mgx:text-[12px] msx:text-[11px] max:text-[11px] lsx:text-[13px] text-white bg-orange-600 absolute ">SALES</span>
-                    <!-- product image -->
-                    <img  class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/product-image (5).png" alt="product-image" srcset="">
-                    <!-- product info -->
-                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
-                        <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
-                                Library Stool Chair</h5>
-                            <p
-                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
-                                $20
-                                <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span>
-                            </p>
-                        </div>
-                        <button
-                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
-                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
-                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
-                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
-                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <!-- shop product -->
-                <div
-                  class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex max:items-center sgx:items-center justify-center max:flex-col sgx:flex-row sgx:gap-x-4 lax:h-72 mgx:h-auto mgx:w-auto ">
-                    <!-- product image -->
-                    <img  class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/product-image (4).png" alt="product-image" srcset="">
-                    <!-- product info -->
-                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
-                        <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
-                                Library Stool Chair</h5>
-                            <p
-                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
-                                $20
-                                <!-- <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span> -->
-                            </p>
-                        </div>
-                        <button
-                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
-                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
-                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
-                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
-                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <!-- shop product -->
-                <div
-                  class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex max:items-center sgx:items-center justify-center max:flex-col sgx:flex-row sgx:gap-x-4 lax:h-72 mgx:h-auto mgx:w-auto ">
-                    <!-- product image -->
-                    <img  class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/product-image (3).png" alt="product-image" srcset="">
-                    <!-- product info -->
-                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
-                        <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
-                                Library Stool Chair</h5>
-                            <p
-                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
-                                $20
-                                <!-- <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span> -->
-                            </p>
-                        </div>
-                        <button
-                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
-                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
-                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
-                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
-                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <!-- shop product -->
-                <div
-                  class=" mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex max:items-center sgx:items-center justify-center max:flex-col sgx:flex-row sgx:gap-x-4 lax:h-72 mgx:h-auto mgx:w-auto ">
-                    <!-- product image -->
-                    <img  class=" max:w-full sgx:w-24 sgx:rounded-lg max:rounded-none " src="/assets/images/product-image (8).png" alt="product-image" srcset="">
-                    <!-- product info -->
-                    <div class=" flex items-center justify-between  w-full bg-cyan-200/ mt-2 py-1 ">
-                        <div class=" flex items-start justify-center flex-col  ">
-                            <h5 class=" font-semibold text-slate-700 lsx:text-base lax:text-[15px] mgx:text-[14.5px] msx:text-[14px] max:text-[13.5px] sgx:text-[13px] ">
-                                Library Stool Chair</h5>
-                            <p
-                                class=" font-semibold  lsx:text-[17px] lax:text-[16px] mgx:text-[14.5px] sgx:text-[13px] msx:text-[13.5px] max:text-[13.5px] text-slate-700 mt-1 ">
-                                $20
-                                <!-- <span class=" font-medium line-through  text-sm text-slate-400 ">30$</span> -->
-                            </p>
-                        </div>
-                        <button
-                            class=" cartBtn lsx:p-2 lax:p-1.5 mgx:p-1 msx:p-1 sgx:p-1 bg-slate-200/85 mgx:scale-100 msx:scale-90 hover:bg-[#029FAE] duration-500 rounded-xl  ">
-                            <svg class="  " width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2.52081 2.97917L4.42748 3.30917L5.31023 13.8261C5.34414 14.2399 5.53284 14.6258 5.83867 14.9066C6.14451 15.1875 6.545 15.3427 6.96023 15.3413H16.9611C17.3586 15.3418 17.743 15.1987 18.0435 14.9383C18.344 14.6779 18.5403 14.3178 18.5964 13.9242L19.4672 7.91267C19.4904 7.7528 19.4819 7.58991 19.4421 7.43334C19.4023 7.27676 19.3321 7.12956 19.2354 7.00015C19.1387 6.87075 19.0174 6.76168 18.8785 6.67918C18.7396 6.59667 18.5858 6.54236 18.4259 6.51934C18.3672 6.51292 4.73365 6.50834 4.73365 6.50834"
-                                    stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M12.9479 9.89542H15.4898" stroke="#272343" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M6.5578 18.5194C6.62502 18.5165 6.69213 18.5273 6.75509 18.551C6.81805 18.5748 6.87556 18.611 6.92414 18.6575C6.97273 18.7041 7.01139 18.76 7.03781 18.8219C7.06422 18.8837 7.07784 18.9503 7.07784 19.0176C7.07784 19.0849 7.06422 19.1515 7.03781 19.2134C7.01139 19.2753 6.97273 19.3312 6.92414 19.3777C6.87556 19.4243 6.81805 19.4605 6.75509 19.4842C6.69213 19.508 6.62502 19.5187 6.5578 19.5158C6.42936 19.5103 6.30801 19.4554 6.21908 19.3626C6.13015 19.2698 6.08051 19.1462 6.08051 19.0176C6.08051 18.8891 6.13015 18.7655 6.21908 18.6726C6.30801 18.5798 6.42936 18.5249 6.5578 18.5194Z"
-                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.466 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.466 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z"
-                                    fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
+            id="productsCenter"  class=" grid msx:grid-cols-4 max:grid-cols-3 sgx:grid-cols-1 w-full  bg-blue-600/ lsx:max-w-[1250px] lax:max-w-[85%] mgx:max-w-[86%] msx:max-w-[94%] max:max-w-[95%] sgx:max-w-[98%] lsx:mt-16 lax:mt-10 mgx:mt-2 gap-x-6 lax:gap-y-12 mgx:gap-y-0 p-4 ">
+            
             </div>
         </section>
 
@@ -891,7 +576,7 @@
             </div>
             <!-- products  -->
             <div
-                class=" grid msx:grid-cols-4 max:grid-cols-3 w-full  bg-blue-600/ lsx:max-w-[1250px] lax:max-w-[85%] mgx:max-w-[84%] msx:max-w-[90%] max:max-w-[90%] mgx:mt-6 max:mt-4 msx:mt-4  lsx:mt-16 lax:mt-14  gap-x-6  lsx:p-4 lax:p-1 ">
+                class=" grid msx:grid-cols-4 max:grid-cols-3 sgx:grid-cols-1 w-full  bg-blue-600/ lsx:max-w-[1250px] lax:max-w-[85%] mgx:max-w-[84%] msx:max-w-[90%] max:max-w-[90%] mgx:mt-6 max:mt-4 msx:mt-4  lsx:mt-16 lax:mt-14  gap-x-6  lsx:p-4 lax:p-1 ">
                 <!-- shop product -->
                 <div
                     class=" max:hidden msx:flex mt-2 mb-8 relative col-span-1 bg-pink-500/ rounded-md flex items-center justify-center flex-col lax:h-72 mgx:h-auto mgx:w-auto">
@@ -1237,86 +922,22 @@
 
     <!-- products cart modal -->
     <div
-        class=" hidden  items-center justify-start flex-col fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[500px] z-50 bg-white rounded-xl  ">
-        <h2 class=" mt-7 text-center font-bold text-[24px] tracking-wide ">SHOP CART</h2>
-        <span class=" w-[90%] mx-auto h-[2px] bg-stone-200 mt-4 rounded-full shadow-md "></span>
-        <!-- cart product -->
-        <div class=" flex items-center justify-between w-full bg-blue-100/ mt-5 py-3 px-4 ">
-            <!-- info -->
-            <img class=" w-1/4 rounded-lg " src="/assets/images/product-image (1).png" alt="" srcset="">
-            <div class=" -ml-8 flex flex-col items-start justify-center ">
-                <h4 class=" text-lg font-semibold text-black ">Library Stool Chair</h4>
-                <div class="  bg-black/  flex justify-center items-center gap-x-1 mt-3  ">
-                    <a
-                        class=" font-medium p-1.5 flex items-center justify-center cursor-pointer  bg-[#242424]  rounded-xl mx-2 ">
-                        <svg width="12" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M13 8H8V13C8 13.55 7.55 14 7 14C6.45 14 6 13.55 6 13V8H1C0.45 8 0 7.55 0 7C0 6.45 0.45 6 1 6H6V1C6 0.45 6.45 0 7 0C7.55 0 8 0.45 8 1V6H13C13.55 6 14 6.45 14 7C14 7.55 13.55 8 13 8Z"
-                                fill="#fff" />
-                        </svg>
-                    </a>
-                    <p class=" font-medium text-[19px] p-1 text-black  rounded-md ">4</p>
-                    <a
-                        class=" font-medium p-1.5 flex items-center justify-center cursor-pointer bg-[#242424]  rounded-xl mx-2 ">
-                        <svg width="12" height="12" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="14" height="2" rx="1" fill="#fff" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class=" flex flex-col items-end pr-2 justify-center gap-y-6 ">
-                <p class="  font-semibold  lsx:text-[17px] lax:text-[16px] text-slate-950 ">$ 20.00</p>
-                <svg class=" cursor-pointer " width="22" height="22" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 6H5H21" stroke="#E23A2E" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path
-                        d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z"
-                        stroke="#E23A2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </div>
+        id="modal" class=" max-h-[515px] overflow-auto duration-500 hidden  items-center justify-start flex-col fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:w-[400px] w-[350px] h-auto z-50 bg-white rounded-xl  ">
+        <h2 class=" xl:mt-7 md:mt-5 mt-4 text-center font-bold xl:text-[24px] md:text-[22px] text-[21px] tracking-wide ">SHOP CART</h2>
+        <span class=" w-[90%] mx-auto h-[2px] bg-stone-500 mt-4 rounded-full shadow-md "></span>
+        <div id="modalProducts" >
+
         </div>
-        <!-- cart product -->
-        <div class=" flex items-center justify-between w-full bg-blue-100/  py-3 px-4 ">
-            <!-- info -->
-            <img class=" w-1/4 rounded-lg " src="/assets/images/product-image (5).png" alt="" srcset="">
-            <div class=" -ml-8 flex flex-col items-start justify-center ">
-                <h4 class=" text-lg font-semibold text-black ">Library Stool Chair</h4>
-                <div class="  bg-black/  flex justify-center items-center gap-x-1 mt-3  ">
-                    <a
-                        class=" font-medium p-1.5 flex items-center justify-center cursor-pointer  bg-[#242424]  rounded-xl mx-2 ">
-                        <svg width="12" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M13 8H8V13C8 13.55 7.55 14 7 14C6.45 14 6 13.55 6 13V8H1C0.45 8 0 7.55 0 7C0 6.45 0.45 6 1 6H6V1C6 0.45 6.45 0 7 0C7.55 0 8 0.45 8 1V6H13C13.55 6 14 6.45 14 7C14 7.55 13.55 8 13 8Z"
-                                fill="#fff" />
-                        </svg>
-                    </a>
-                    <p class=" font-medium text-[19px] p-1 text-black  rounded-md ">4</p>
-                    <a
-                        class=" font-medium p-1.5 flex items-center justify-center cursor-pointer bg-[#242424]  rounded-xl mx-2 ">
-                        <svg width="12" height="12" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="14" height="2" rx="1" fill="#fff" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class=" flex flex-col items-end pr-2 justify-center gap-y-6 ">
-                <p class="  font-semibold  lsx:text-[17px] lax:text-[16px] text-slate-950 ">$ 20.00</p>
-                <svg class=" cursor-pointer " width="22" height="22" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 6H5H21" stroke="#E23A2E" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path
-                        d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z"
-                        stroke="#E23A2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </div>
+        <div class=" flex items-center justify-between w-full xl:px-4 md:px-3 xl:mt-6 md:mt-4 my-4 px-3 xl:mb-4 md:mb-3 bg-black/ " >
+            <button id="clearAll" class=" xl:text-[14.5px] md:text-[14px] text-[13px] xl:px-2 xl:py-2 md:p-1.5 p-1 font-medium rounded-lg text-white bg-rose-600 shadow-red-300 shadow-sm " >Clear All</button>
+            <p class=" xl:text-[18px] md:text-[16px] text-stone-800 font-semibold " >Total Price : <span id="totalPrice" ></span> </p>
+            <button id="confirm" class=" xl:text-[14.5px] md:text-[14px] text-[13px] xl:px-2 xl:py-2 md:p-1.5 p-1 font-medium rounded-lg text-white bg-stone-600 shadow-stone-300 shadow-sm " >Confirm</button>
         </div>
     </div>
 
 
     <!-- blur on modal on  -->
-    <div class="hidden absolute inset-0 bg-slate-900/50 backdrop-blur-md w-full  z-40  "></div>
+    <div id="backdrop" class=" duration-500 hidden absolute inset-0 bg-slate-900/50 backdrop-blur-md w-full  z-40  "></div>
 
 
     <script type="module" src="/src/js/app.js"></script>
